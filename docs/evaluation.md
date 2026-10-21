@@ -1,0 +1,15 @@
+# Independent evaluation protocol
+
+Emanuel coordinates with another team for at least **60 independently authored answerable questions**. This requirement is pending; three supplied synthetic test questions are only smoke fixtures. Preserve non-identifying team/source references and collection/version records. Have accepted article IDs reviewed against the authorized source. Record ambiguous questions and adjudication before freezing. Collect out-of-scope questions separately; they do not count toward the answerable requirement.
+
+1. Karen and Zaid establish topic labels and disjoint training/development splits. Check duplicate IDs, normalized duplicate text, near paraphrases and leakage manually as well as through validation.
+2. Fit learned preprocessing/vocabulary and classifier only on training. Use development questions to select smoothing changes, ranking settings and confidence thresholds. Log trials and reasons in local artifacts. Do not choose settings from test results.
+3. Freeze independent questions and accepted IDs before final testing. Record file hashes, dataset/model identifiers, code commit, dependency lock, settings and provenance. A separate team must actually write them; a provenance string alone is not proof.
+4. Run once with frozen settings using `uv run --frozen regulation-finder --data data/real --model artifacts/real-model.json evaluate`. Keep stdout with the run manifest. Use `--split development` only during tuning. No command automatically calibrates settings.
+5. Report measured counts/denominators, failure examples and limitations. Treat subsequent changes as a new experiment requiring fresh untouched testing; do not silently retune on test failures.
+
+**Top-three hit rate** = answerable questions with any accepted article among the first three *displayed* articles / **all eligible answerable questions**. An abstention is a miss. One accepted match is enough; multiple accepted IDs never multiply hits. Report H/N and percentage. With zero eligible questions, rate is null, not zero or success.
+
+Also report answerable abstention count/N and out-of-scope abstention count/M, plus out-of-scope false returns M minus abstentions. These metrics never remove difficult/abstained answerable examples from the headline denominator. The JSON includes per-question displayed IDs and hit flags for audit.
+
+Permission, real test provenance, final N >= 60, settings and all assignment metrics remain **PENDING**. Synthetic output is labeled synthetic and cannot support assignment claims. Latency/memory are separate measured quantities, with hardware, OS, dataset/model hashes and procedure; see the Pi guide. Class probabilities and lexical overlap are not validated confidence estimates.
