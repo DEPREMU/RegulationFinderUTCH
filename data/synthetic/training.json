@@ -1,0 +1,50 @@
+[
+  {
+    "example_id": "SYN-T1",
+    "question": "How can I borrow library books?",
+    "topic": "library",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T2",
+    "question": "Where do I return a library book?",
+    "topic": "library",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T3",
+    "question": "How do I renew library books?",
+    "topic": "library",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T4",
+    "question": "Where is the library catalog?",
+    "topic": "library",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T5",
+    "question": "Are goggles required in the laboratory?",
+    "topic": "laboratory",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T6",
+    "question": "How should laboratory equipment be cleaned?",
+    "topic": "laboratory",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T7",
+    "question": "What should I wear during laboratory experiments?",
+    "topic": "laboratory",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  },
+  {
+    "example_id": "SYN-T8",
+    "question": "Can I use equipment for experiments in the laboratory?",
+    "topic": "laboratory",
+    "provenance": "Synthetic fixture author; not a student contribution claim"
+  }
+]

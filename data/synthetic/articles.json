@@ -1,0 +1,38 @@
+[
+  {
+    "article_id": "SYN-L1",
+    "text": "SYNTHETIC: Library books may be borrowed using a library card.",
+    "topic": "library",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  },
+  {
+    "article_id": "SYN-L2",
+    "text": "SYNTHETIC: Library books must be returned at the return desk.\nKeep the receipt.",
+    "topic": "library",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  },
+  {
+    "article_id": "SYN-L3",
+    "text": "SYNTHETIC: Library books can be renewed at the library desk.",
+    "topic": "library",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  },
+  {
+    "article_id": "SYN-L4",
+    "text": "SYNTHETIC: Library books are listed in the library catalog.",
+    "topic": "library",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  },
+  {
+    "article_id": "SYN-C1",
+    "text": "SYNTHETIC: Laboratory goggles must be worn during laboratory experiments.",
+    "topic": "laboratory",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  },
+  {
+    "article_id": "SYN-C2",
+    "text": "SYNTHETIC: Laboratory equipment must be cleaned after experiments.",
+    "topic": "laboratory",
+    "source": "Invented fixture synthetic-demo-v1; no school authority"
+  }
+]

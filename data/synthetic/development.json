@@ -1,0 +1,18 @@
+[
+  {
+    "question_id": "SYN-D1",
+    "question": "library books borrow card",
+    "accepted_article_ids": [
+      "SYN-L1"
+    ],
+    "provenance": "Synthetic smoke fixture; NOT another team"
+  },
+  {
+    "question_id": "SYN-D2",
+    "question": "laboratory goggles experiments",
+    "accepted_article_ids": [
+      "SYN-C1"
+    ],
+    "provenance": "Synthetic smoke fixture; NOT another team"
+  }
+]

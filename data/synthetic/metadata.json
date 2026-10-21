@@ -1,0 +1,6 @@
+{
+  "dataset_id": "synthetic-demo-v1",
+  "synthetic": true,
+  "permission_status": "School permission PENDING; these fixtures are invented, not regulation text.",
+  "evaluation_origin": "Synthetic author-written smoke fixtures; NOT an independent team test."
+}

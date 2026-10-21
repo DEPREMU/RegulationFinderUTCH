@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Regulation Finder UTCH</title><link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}"></head>
+<body><main>
+<h1>Regulation Finder UTCH</h1>
+<p class="notice">{{ notice }}</p>
+{% if synthetic %}<p class="synthetic"><strong>SYNTHETIC DEMO DATA — invented fixtures, not school regulations.</strong></p>{% endif %}
+<form method="post"><label for="question">Question about the regulation</label>
+<input id="question" name="question" maxlength="2000" value="{{ question }}">
+<button type="submit">Find articles</button></form>
+{% if result %}<section aria-live="polite">
+{% if result.message %}<p>{{ result.message }}</p>{% endif %}
+{% for article in result.articles %}<article><h2>Article {{ article.article_id }}</h2>
+<p class="original">{{ article.text }}</p><p class="source">Source: {{ article.source }}</p></article>{% endfor %}
+</section>{% endif %}
+</main></body></html>
