@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling>=1.26,<2"]
+build-backend = "hatchling.build"
+
+[project]
+name = "regulation-finder-utch"
+version = "0.1.0"
+description = "Informational regulation retrieval; synthetic preparation slice"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.26,<3", "flask>=3.1,<4"]
+
+[project.scripts]
+regulation-finder = "regulation_finder.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8,<10", "ruff>=0.11,<1"]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/regulation_finder"]
+
+[tool.ruff]
+target-version = "py310"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
