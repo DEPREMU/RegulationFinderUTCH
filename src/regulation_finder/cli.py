@@ -4,6 +4,7 @@ import argparse
 import json
 from dataclasses import asdict
 
+from .calibration import sweep_development_thresholds
 from .classifier import TopicClassifier
 from .config import NOTICE, Settings
 from .evaluation import evaluate
@@ -27,6 +28,13 @@ def main(argv=None):
     search.add_argument("question")
     evaluation = commands.add_parser("evaluate")
     evaluation.add_argument("--split", choices=["development", "evaluation"], default="evaluation")
+    calibration = commands.add_parser("calibrate")
+    calibration.add_argument(
+        "--steps",
+        type=int,
+        default=11,
+        help="Number of evenly spaced development-only values per threshold (2-101)",
+    )
     measurement = commands.add_parser("measure")
     measurement.add_argument("--iterations", type=int, default=100)
     measurement.add_argument("--hardware-label", required=True)
@@ -36,7 +44,11 @@ def main(argv=None):
     args = parser.parse_args(argv)
     try:
         settings = Settings(args.min_topic_probability, args.min_lexical_score)
-        dataset = load_dataset(args.data)
+        dataset = load_dataset(
+            args.data,
+            include_development=args.command in {"validate", "evaluate", "calibrate", "measure"},
+            include_evaluation=args.command in {"validate", "evaluate"},
+        )
         common = {
             "dataset_id": dataset.metadata["dataset_id"],
             "dataset_fingerprint": dataset.fingerprint,
@@ -61,6 +73,11 @@ def main(argv=None):
                     "settings": asdict(settings),
                     "evaluation_origin": dataset.metadata["evaluation_origin"],
                     **evaluate(retriever, getattr(dataset, args.split), dataset.out_of_scope),
+                }
+            elif args.command == "calibrate":
+                output = {
+                    **common,
+                    **sweep_development_thresholds(dataset, retriever.model, args.steps),
                 }
             elif args.command == "measure":
                 output = {

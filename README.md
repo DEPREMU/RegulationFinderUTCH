@@ -20,6 +20,7 @@ Open http://127.0.0.1:5000. Stop with Ctrl-C. All application assets are local; 
 
 ```sh
 uv run --frozen regulation-finder evaluate --split development
+uv run --frozen regulation-finder calibrate --steps 11
 uv run --frozen regulation-finder evaluate
 uv run --frozen regulation-finder measure --iterations 100 --hardware-label 'local development host; not Raspberry Pi'
 uv run --frozen ruff check .
@@ -35,7 +36,18 @@ Global options precede the subcommand:
 uv run --frozen regulation-finder --data data/synthetic --model artifacts/synthetic-model.json --min-topic-probability 0.55 --min-lexical-score 0.15 search 'laboratory goggles'
 ```
 
-Missing or stale artifacts require `train`; invalid datasets exit with a clear error. Empty questions request input. Unseen vocabulary, failed probability gates or no useful lexical overlap produce `I don't find this in the regulation`. At most three articles from the predicted topic appear; fewer candidates yield fewer results without crossing topics. Threshold defaults are arbitrary demo values, **not calibrated confidence estimates**. Choose real settings only on development data.
+Missing or stale artifacts require `train`; invalid datasets exit with a clear error. Empty questions request input. Unseen vocabulary, failed probability gates or no useful lexical overlap produce `I don't find this in the regulation`. At most three articles from the predicted topic appear; fewer candidates yield fewer results without crossing topics. Threshold defaults are arbitrary demo values, **not calibrated confidence estimates**. `calibrate` reports a threshold grid using only development examples; it does not select a setting or read the out-of-scope/final evaluation splits. Choose and document real settings using development data only.
+
+The supplied flat query/article-pair format can be normalized locally with:
+
+```sh
+uv run --frozen python scripts/prepare_pair_dataset.py \
+  --pairs /path/to/dataset_v1.0_train_dev.json \
+  --articles /path/to/reglas_reglamento_utch.json \
+  --output data/real
+```
+
+The adapter preserves the `train`/`dev` assignments, allows multiple queries to reference one article, and refuses to write output when an article topic has no training example. Permission remains pending; `data/real/` is ignored by Git and intended for local use only until that is resolved.
 
 ## Assignment checklist and pending inputs
 
