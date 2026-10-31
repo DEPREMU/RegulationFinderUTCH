@@ -15,6 +15,17 @@ build/
 !.env.example
 artifacts/*
 !artifacts/README.md
+!artifacts/training/
+!artifacts/training/**
 data/real/
+!data/real/
+data/real/*
+!data/real/README.md
+!data/real/train/
+!data/real/train/**
+!data/real/dev/
+!data/real/dev/**
+!data/real/prepared/
+!data/real/prepared/**
 *.log
 .DS_Store

@@ -19,8 +19,12 @@ def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--data", default="data/synthetic")
     parser.add_argument("--model", default="artifacts/synthetic-model.json")
-    parser.add_argument("--min-topic-probability", type=float, default=0.55)
-    parser.add_argument("--min-lexical-score", type=float, default=0.15)
+    parser.add_argument(
+        "--min-topic-probability", type=float, default=Settings().min_topic_probability
+    )
+    parser.add_argument(
+        "--min-lexical-score", type=float, default=Settings().min_lexical_score
+    )
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("validate")
     commands.add_parser("train")
@@ -47,7 +51,9 @@ def main(argv=None):
         dataset = load_dataset(
             args.data,
             include_development=args.command in {"validate", "evaluate", "calibrate", "measure"},
-            include_evaluation=args.command in {"validate", "evaluate"},
+            include_evaluation=(
+                args.command == "evaluate" and args.split == "evaluation"
+            ),
         )
         common = {
             "dataset_id": dataset.metadata["dataset_id"],
