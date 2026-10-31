@@ -1,0 +1,3981 @@
+{
+  "dataset_id": "utch-week2-train60-dev20-v1.1",
+  "dataset_fingerprint": "15377631d6b485455d6b0567dd95cee36ec9ad843a217c73d4daa4cb2f02821a",
+  "synthetic": false,
+  "notice": "Informational only. This application is not an official university source.",
+  "split": "development",
+  "selection": null,
+  "selection_note": "No threshold was selected. Compare these development-only results and choose an objective before freezing settings.",
+  "grid_steps_per_threshold": 21,
+  "threshold_sweep": [
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.0,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.05,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.1,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 1,
+      "answerable_abstention_rate": 0.05
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 1,
+      "answerable_abstention_rate": 0.05
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 1,
+      "answerable_abstention_rate": 0.05
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 1,
+      "answerable_abstention_rate": 0.05
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 1,
+      "answerable_abstention_rate": 0.05
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 4,
+      "answerable_abstention_rate": 0.2
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.15,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 4,
+      "answerable_abstention_rate": 0.2
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.2,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 14,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 4,
+      "answerable_abstention_rate": 0.2
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 13,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.65,
+      "answerable_abstentions": 5,
+      "answerable_abstention_rate": 0.25
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.25,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 10,
+      "answerable_abstention_rate": 0.5
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 13,
+      "answerable_abstention_rate": 0.65
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 13,
+      "answerable_abstention_rate": 0.65
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.3,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 6,
+      "answerable_abstention_rate": 0.3
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 12,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.6,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 9,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.45,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 10,
+      "answerable_abstention_rate": 0.5
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 13,
+      "answerable_abstention_rate": 0.65
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 13,
+      "answerable_abstention_rate": 0.65
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.35,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 7,
+      "answerable_abstention_rate": 0.35
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 11,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.55,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.4,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 10,
+      "answerable_abstention_rate": 0.5
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.45,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 8,
+      "answerable_abstention_rate": 0.4
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 10,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.5,
+      "answerable_abstentions": 9,
+      "answerable_abstention_rate": 0.45
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 7,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.35,
+      "answerable_abstentions": 10,
+      "answerable_abstention_rate": 0.5
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.5,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.55,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 8,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.4,
+      "answerable_abstentions": 11,
+      "answerable_abstention_rate": 0.55
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 12,
+      "answerable_abstention_rate": 0.6
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.6,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.65,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.7,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 6,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.3,
+      "answerable_abstentions": 14,
+      "answerable_abstention_rate": 0.7
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.75,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 5,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.25,
+      "answerable_abstentions": 15,
+      "answerable_abstention_rate": 0.75
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.8,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 4,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.2,
+      "answerable_abstentions": 16,
+      "answerable_abstention_rate": 0.8
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.85,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 3,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.15,
+      "answerable_abstentions": 17,
+      "answerable_abstention_rate": 0.85
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.9,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 2,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.1,
+      "answerable_abstentions": 18,
+      "answerable_abstention_rate": 0.9
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 1,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.05,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.95
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 0.95,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.05,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.1,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.15,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.2,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.25,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.3,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.35,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.4,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.45,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.5,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.55,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.6,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.65,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.7,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.75,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.8,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.85,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.9,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 0.95,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    },
+    {
+      "min_topic_probability": 1.0,
+      "min_lexical_score": 1.0,
+      "top_three_hits": 0,
+      "eligible_questions": 20,
+      "top_three_hit_rate": 0.0,
+      "answerable_abstentions": 20,
+      "answerable_abstention_rate": 1.0
+    }
+  ]
+}
