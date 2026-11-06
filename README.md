@@ -75,6 +75,6 @@ The adapter preserves the `train`/`dev` assignments, allows multiple queries to 
 - Everyone codes, presents and maintains short weekly logs: blank templates provided; actual contributions/presentation evidence **pending**.
 - Instructor deadline and calendar dates: **pending**. Plan covers four relative weeks, not the assignment's original seven weeks.
 
-Read [data contracts](data/README.md), [architecture](docs/architecture.md), [four-week plan](docs/project-plan.md), [evaluation](docs/evaluation.md), [Pi procedure](docs/raspberry-pi.md) and [report outline](docs/report-template.md).
+Read [data contracts](data/README.md), [architecture](docs/architecture.md), [four-week plan](docs/project-plan.md), [evaluation](docs/evaluation.md), [Week 3 model release](docs/week-3-model-release.md), [Pi procedure](docs/raspberry-pi.md) and [report outline](docs/report-template.md).
 
 The team supplied the [Trello AI board](https://trello.com/b/bNahlyvm/ai). It was not accessed or modified during initialization. Git work is local only; do not push, deploy or change remotes without new authorization. GitHub workflow is supplied but remote execution remains pending while commits stay local.
