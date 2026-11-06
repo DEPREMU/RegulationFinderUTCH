@@ -1,5 +1,5 @@
 {
-  "report_type": "supplementary frozen-model diagnostic; not independent headline evaluation",
+  "report_type": "Historical frozen Week 2 model diagnostic run before these questions were added to training.",
   "source_file": "data/real/week3-questions.csv",
   "source_sha256": "24890592f13e014932598d199de8e19942a2b9c37f3c382c088167c6834922c4",
   "source_split_values": {
@@ -42,7 +42,7 @@
   "answerable_abstentions": 17,
   "out_of_scope_questions": 0,
   "headline_result_eligible": false,
-  "limitation": "The source marks every record as train and does not identify an independent authoring team. Do not report this diagnostic as the final independent result.",
+  "limitation": "This pre-training score is not an evaluation of the Week 3 model. All 60 questions in this file have since been incorporated into Week 3 training; do not report these results as current performance or as an independent headline.",
   "details": [
     {
       "question_id": "Q9061",
@@ -863,5 +863,7 @@
     "wrong_topic_returns": 14,
     "same_topic_wrong_article_returns": 0,
     "csv_topic_label_strings_differ_from_catalog": 51
-  }
+  },
+  "status": "superseded for current-model evaluation after incorporation into the Week 3 training set",
+  "eligible_for_current_model_evaluation": false
 }

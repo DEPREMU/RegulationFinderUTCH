@@ -52,6 +52,8 @@ uv run --frozen regulation-finder --data data/real/prepared --model artifacts/tr
 
 The selected thresholds (`0.25` topic probability and `0.25` lexical coverage) are recorded in `artifacts/training/selected-settings.json` and used by default. On the 20 development examples, this setting retrieves a correct article in the top three for 14 queries; 4 answerable queries abstain. The grid and evaluation reports are reproducible with the commands above. No out-of-scope development examples were available to measure false returns, and the final evaluation set remains separate and unused.
 
+The Week 3 release adds the user-supplied 60 questions marked `train` to the original 60, mapping each question to the prepared catalog topic for its article number. Its dataset is `data/real/week3-prepared/`, and the frozen model is `artifacts/training/week3-real-model.json`. The Week 3 configuration uses topic probability `0.35` and lexical coverage `0.25`; pass both values explicitly when searching or evaluating with this model. Reproduction commands and development results are in [the Week 3 model release record](docs/week-3-model-release.md). These questions are training data, not an independent test set.
+
 The legacy flat query/article-pair adapter can still be used with:
 
 ```sh
@@ -68,7 +70,7 @@ The adapter preserves the `train`/`dev` assignments, allows multiple queries to 
 - Classifier: direct multinomial Naive Bayes, trained from scratch; no pretrained models, embeddings, LLMs or external AI APIs. No autocomplete.
 - One row per article, original text retained: 22 articles are included in the Week 2 prepared dataset; confirm institutional permission and provenance before redistribution.
 - School permission confirmed with instructor, source/provenance and redistribution terms: **pending Karen/instructor**. Software license is also a team decision; no license selected.
-- Week 2 training/development run: 60 training questions across 20 topics and 20 development pairs are included; the final evaluation set remains separate and unused.
+- Training/development runs: Week 2 used 60 training questions; Week 3 combines those with 60 additional training questions. Both use 20 development pairs; the final evaluation set remains separate and unused.
 - At least 60 independent questions from another team and a frozen final top-three evaluation: **pending Emanuel**. The Week 2 development results do not satisfy this requirement.
 - Actual Raspberry Pi model, OS, installation, latency and memory measurements: **pending Betsy**.
 - Live demo, dataset, code and two-page technical report: templates and procedures ready; final deliverables **pending**.

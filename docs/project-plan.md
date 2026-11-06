@@ -11,6 +11,6 @@ Instructor deadline and calendar dates: **PENDING**. These are relative mileston
 
 Everyone writes code, presents their part and maintains weekly contribution logs. In week 4 finish logs and rehearse together. Templates contain no invented entries. Repository scaffolding is preparation; it does not mean these team milestones are complete.
 
-Current blockers: authorized regulation, permission evidence, real training/development labels, at least 60 questions from another team, Pi model/OS and access, instructor dates, software license and redistribution decisions. Karen owns data/permission decisions, Emanuel coordinates deadline/deliverables, Betsy collects hardware facts, Zaid owns model settings. Resolve permission before real-data collection/redistribution. Never report synthetic accuracy as assignment evidence.
+Current blockers: confirmation of authorized regulation and redistribution terms, at least 60 independently authored answerable questions from another team, Pi model/OS and access, instructor dates, and the software-license decision. Real training/development data are available and the Week 3 model is frozen; the independent evaluation remains pending. Karen owns data/permission decisions, Emanuel coordinates deadline/deliverables, Betsy collects hardware facts, Zaid owns model settings. Resolve permission before real-data collection/redistribution. Never report synthetic accuracy as assignment evidence.
 
 Trello board AI: https://trello.com/b/bNahlyvm/ai — supplied reference only, not accessed or modified by initialization.

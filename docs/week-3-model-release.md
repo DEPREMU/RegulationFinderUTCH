@@ -1,69 +1,66 @@
 # Week 3 model release
 
-Status: the development model and search settings are frozen for independent evaluation. The independent evaluation has not been run; its headline result is pending a frozen set of at least 60 independently authored answerable questions.
+Status: the expanded training run is frozen for independent evaluation. The final independent evaluation has not been run. The Week 3 questions supplied by the project owner are now training data and cannot be reused as a final test set.
 
-## Frozen release
+## Training data and frozen release
 
-| Item | Frozen value |
+The Week 3 prepared dataset combines the original 60 training questions with the 60 rows in `data/real/week3-questions.csv`. All rows in that CSV were marked `train`. Their article numbers were mapped to the canonical topic labels in the prepared article catalog; the original source topic labels are preserved in each row's provenance. The original Week 2 dataset and model remain available as the earlier release.
+
+| Item | Week 3 frozen value |
 | --- | --- |
-| Dataset | `utch-week2-train60-dev20-v1.1` |
-| Dataset fingerprint | `15377631d6b485455d6b0567dd95cee36ec9ad843a217c73d4daa4cb2f02821a` |
-| Training / development examples | 60 / 20 |
+| Dataset | `utch-week3-train120-dev20-v1.0` |
+| Dataset fingerprint | `80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed` |
+| Training / development examples | 120 / 20 |
 | Articles / topics | 22 / 20 |
 | Classifier | Multinomial Naive Bayes, implemented directly with NumPy |
 | Smoothing | Laplace alpha `1.0` |
-| Vocabulary | 312 tokens, learned from training questions only |
-| Minimum topic probability | `0.25` |
+| Vocabulary | 489 tokens, learned from training questions only |
+| Minimum topic probability | `0.35` |
 | Minimum lexical coverage | `0.25` |
-| Model SHA-256 | `79e62ddd6f22f8f8021a44d542c680bc481d0d199ca584dacbf32f8e335e07f5` |
-| Code revision used for the release | `8b2dba9` |
+| Model SHA-256 | `986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4` |
+| Week 3 source CSV SHA-256 | `24890592f13e014932598d199de8e19942a2b9c37f3c382c088167c6834922c4` |
+| Development file SHA-256 | `167f6d237c26181530a7215775e8a51192669ef98d54b6f7ad2de53b6839b4e5` |
+| Training manifest | `artifacts/training/week3-training-manifest.json` |
 
-Settings were selected on development data by maximizing top-three hits; ties favored higher combined thresholds, then the higher topic threshold and lexical threshold. The full grid and selected values are in `artifacts/training/development-calibration-grid.json` and `artifacts/training/selected-settings.json`. The training configuration and run metadata are in `artifacts/training/real-training-manifest.json`.
+Thresholds were selected only from the 20 development questions by maximizing top-three hits; ties favored higher combined thresholds, then the higher topic threshold and lexical threshold. The complete grid and selected settings are in `artifacts/training/week3-development-calibration-grid.json` and `artifacts/training/week3-selected-settings.json`.
 
-The classifier computes its parameters directly from token counts and smoothed frequencies. It has no iterative optimizer, so there is no loss curve to export. The manifest records `loss_history: null` and explains this. The model file, manifest, selected settings, calibration grid and development evaluation are the exported release log.
+The classifier computes parameters directly from token counts and smoothed frequencies. It has no iterative optimizer, so there is no loss curve. The training manifest records `loss_history: null` and explains why. The model, manifest, calibration grid, selected settings and development report are the exported run record.
 
 ## Reproduction
 
-Run these commands from the repository root with the locked dependencies:
+Run from the repository root:
 
 ```sh
 uv sync --frozen
-uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json validate
-uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json train
-uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json calibrate --steps 21 > artifacts/training/development-calibration-grid.json
-uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json evaluate --split development > artifacts/training/development-evaluation.json
-sha256sum artifacts/training/real-model.json
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json validate
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json train
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json calibrate --steps 21 > artifacts/training/week3-development-calibration-grid.json
+uv run --frozen python scripts/select_development_settings.py artifacts/training/week3-development-calibration-grid.json artifacts/training/week3-selected-settings.json
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json --min-topic-probability 0.35 --min-lexical-score 0.25 evaluate --split development > artifacts/training/week3-development-evaluation.json
+sha256sum artifacts/training/week3-real-model.json
 ```
 
-The calibration command reports a development-only grid. It does not select thresholds automatically; the committed selection is documented above. The final evaluation split is not read by these commands.
+The calibration command reads development examples only. The selection script accepts only a development grid and applies the documented objective. These commands do not read the separate final evaluation file.
 
-## Integration and development findings
+## Development result and errors
 
-Validation accepted the prepared dataset and its 22 articles. Training completed and reproduced the frozen model hash. Development evaluation at the frozen settings returned 14 top-three hits from 20 answerable questions (70%) and abstained on 4/20. The development set contains no out-of-scope examples, so it cannot estimate out-of-scope false returns.
+At the frozen settings, the model returned a correct article in the displayed top three for 14/20 development questions (70%) and abstained on 3/20. Six questions missed:
 
-The six development misses were:
-
-| Question | Observed result | Evidence-based explanation |
+| Question | Observed result | Explanation |
 | --- | --- | --- |
-| `UTCH-ART-001` | Returned article 13; accepted article 2. Predicted topic `Periodos escolares` at `0.279746`. | Topic classification selected a different subject, and retrieval stayed within that topic. Article 2 defines SA, DE and AU; article 13 describes school periods. |
-| `UTCH-ART-006` | Returned article 9; accepted article 8. Predicted topic `Cambio de carrera y turno` at `0.606898`. | Topic selection was plausible, but lexical ranking preferred the general career/shift change article 9 over article 8, which specifically covers first-term students and the first 10 business days. |
-| `UTCH-ART-012` | Abstained. Predicted topic probability `0.216189`, below the `0.25` gate. | The query was assigned to `Cambio de carrera de nuevo ingreso`; the accepted article is about reincorporation after an interruption. |
-| `UTCH-ART-014` | Abstained with predicted topic `Periodos escolares` at `0.545581`. | The topic gate passed, but no article in the predicted topic met the lexical retrieval requirements. The accepted article concerns competency-based learning evaluation. |
-| `UTCH-ART-019` | Abstained at topic probability `0.193785`, below the gate. | The query was assigned to `Examen de ingreso`; the accepted article concerns student rights. |
-| `UTCH-ART-020` | Abstained at topic probability `0.137666`, below the gate. | The query was assigned to `Estudios en el extranjero`; the accepted article concerns student obligations. |
+| `UTCH-ART-006` | Returned article 9; expected article 8. | Classified as `Cambio de carrera y turno`; the lexical ranking preferred the general change article over the first-term rule. |
+| `UTCH-ART-012` | Abstained at topic probability `0.336769`, below the `0.35` threshold. | Predicted `Examen de ingreso`; the expected article concerns reincorporation. |
+| `UTCH-ART-014` | Returned articles 21 and 2; expected article 20. | Predicted `Calificación mínima aprobatoria`; the expected article concerns academic evaluation. |
+| `UTCH-ART-017` | Returned article 4; expected article 33. | Predicted `Examen de ingreso`; the expected article concerns attendance required for an ordinary exam. |
+| `UTCH-ART-019` | Abstained after passing the topic threshold (`0.447731`), with no article meeting the lexical threshold. | Predicted `Examen de ingreso`; the expected article concerns student rights. |
+| `UTCH-ART-020` | Abstained at topic probability `0.301461`, below the `0.35` threshold. | The query was not assigned to the catalog topic for student obligations. |
 
-These cases describe the existing development run; they do not justify changing the frozen settings. No final-test errors are available to explain yet.
+The development set has no out-of-scope questions, so it does not measure false returns for out-of-scope queries. These are development findings; no final-test errors are available yet.
 
-## User-supplied Week 3 questions
-
-The original file is preserved at `data/real/week3-questions.csv`. It contains 60 unique question IDs across 20 article groups, with three questions per group. All 60 rows are marked `train`. No authoring-team provenance is included. The questions have no normalized exact-text overlap with the frozen training set or existing development set, but that check does not establish independent authorship.
-
-As a supplementary diagnostic, the frozen model was run against each `user_query`, scored against `article_number`, and left unchanged. The `topic` column was retained in the source CSV but not used to change the frozen catalog's topic labels. Results: 29/60 top-three hits (48.3%), 17 answerable abstentions, 14 non-abstaining misses, and no out-of-scope examples. Of the misses, 14 fell below the topic-probability gate, 3 passed that gate but found no article above the lexical threshold, and 14 returned articles from a different topic. There were no wrong-article returns within the expected topic. The CSV topic-label strings differ from the prepared catalog labels on 51/60 rows; map the taxonomies before considering these rows for future training. The complete per-question output and source/model hashes are in `artifacts/training/week3-questions-diagnostic.json`.
-
-Because the source marks the questions as training data and does not identify who authored them, this diagnostic is not an independent headline evaluation. Do not combine its score with the 20-example development result or present it as the final result.
+The earlier `artifacts/training/week3-questions-diagnostic.json` records a run of the Week 2 model made before the 60 questions were added to training. It is retained only as a historical record and is explicitly ineligible as a measure of current model performance.
 
 ## Independent evaluation handoff
 
-Before evaluation, preserve the independently authored questions and accepted article IDs in a separate frozen file, record their provenance and SHA-256, and confirm that the set contains at least 60 answerable questions. Record the exact code revision, dependency lock, dataset fingerprint, model hash and frozen settings with the one-time evaluation output. Keep answerable abstentions in the headline denominator. Do not inspect evaluation results to choose model or search settings.
+Obtain at least 60 answerable questions independently authored by another team, with accepted article IDs and provenance. Freeze that file and record its SHA-256 before running it once with the Week 3 model hash, dataset fingerprint, dependency lock, code revision and selected settings. Keep answerable abstentions in the headline denominator. Do not tune using final evaluation results.
 
-After the run, document observed errors and limitations without tuning on those questions. If the classifier, preprocessing, ranking, thresholds or model changes after final testing, use a fresh independent test set for any new headline result.
+After evaluation, document observed errors and limitations without changing the model based on those questions. Any change after final testing requires a fresh independent test set for a new headline result.
