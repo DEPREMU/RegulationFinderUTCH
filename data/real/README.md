@@ -1,13 +1,14 @@
-# Datos de Week 2
+# Real data
 
-El propietario del proyecto pidió rastrear estos archivos para poder reproducir el entrenamiento desde otro dispositivo. La autorización para redistribución pública del reglamento todavía no está confirmada.
+These files are tracked to reproduce the project runs on another device. Public redistribution permission for the regulation has not been confirmed.
 
-- `train/questions.csv`: 60 preguntas asignadas a `train`.
-- `dev/dataset_v1.0_all_dev.json`: 20 pares originales, todos asignados a `dev`.
-- `prepared/`: dataset normalizado que consume el CLI.
-- `review/`: borrador anterior y notas de revisión; no forma parte del dataset de entrenamiento.
-- `artifacts/training/`: modelo, manifiesto, cuadrícula de calibración, configuración elegida y evaluación de desarrollo.
+- `train/questions.csv`: 60 questions assigned to `train`.
+- `dev/dataset_v1.0_all_dev.json`: 20 original pairs, all assigned to `dev`.
+- `prepared/`: normalized dataset consumed by the CLI.
+- `week3-questions.csv`: user-supplied 60-question file. Its records are marked `train`; authoring-team provenance is not provided. The frozen-model diagnostic is in `artifacts/training/week3-questions-diagnostic.json`. This file is not treated as an independent final evaluation set.
+- `review/`: earlier draft and review notes; not part of the training dataset.
+- `artifacts/training/`: model, manifest, calibration grid, selected settings, and development reports.
 
-Para incorporar los artículos faltantes al catálogo entrenado, se consolidaron estas etiquetas: Artículo 2 → `Calificación mínima aprobatoria`; Artículo 5 → `Examen de ingreso`. La decisión está reflejada en `prepared/articles.json`.
+To include the missing articles in the trained catalog, these labels were consolidated: Article 2 → `Calificación mínima aprobatoria`; Article 5 → `Examen de ingreso`. The decision is reflected in `prepared/articles.json`.
 
-El archivo de evaluación final permanece aislado: no se incluyó ni se abrió.
+The separate final evaluation file remains isolated; it was not included or opened.

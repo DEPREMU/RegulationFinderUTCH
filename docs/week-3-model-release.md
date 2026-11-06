@@ -54,6 +54,14 @@ The six development misses were:
 
 These cases describe the existing development run; they do not justify changing the frozen settings. No final-test errors are available to explain yet.
 
+## User-supplied Week 3 questions
+
+The original file is preserved at `data/real/week3-questions.csv`. It contains 60 unique question IDs across 20 article groups, with three questions per group. All 60 rows are marked `train`. No authoring-team provenance is included. The questions have no normalized exact-text overlap with the frozen training set or existing development set, but that check does not establish independent authorship.
+
+As a supplementary diagnostic, the frozen model was run against each `user_query`, scored against `article_number`, and left unchanged. The `topic` column was retained in the source CSV but not used to change the frozen catalog's topic labels. Results: 29/60 top-three hits (48.3%), 17 answerable abstentions, 14 non-abstaining misses, and no out-of-scope examples. Of the misses, 14 fell below the topic-probability gate, 3 passed that gate but found no article above the lexical threshold, and 14 returned articles from a different topic. There were no wrong-article returns within the expected topic. The CSV topic-label strings differ from the prepared catalog labels on 51/60 rows; map the taxonomies before considering these rows for future training. The complete per-question output and source/model hashes are in `artifacts/training/week3-questions-diagnostic.json`.
+
+Because the source marks the questions as training data and does not identify who authored them, this diagnostic is not an independent headline evaluation. Do not combine its score with the 20-example development result or present it as the final result.
+
 ## Independent evaluation handoff
 
 Before evaluation, preserve the independently authored questions and accepted article IDs in a separate frozen file, record their provenance and SHA-256, and confirm that the set contains at least 60 answerable questions. Record the exact code revision, dependency lock, dataset fingerprint, model hash and frozen settings with the one-time evaluation output. Keep answerable abstentions in the headline denominator. Do not inspect evaluation results to choose model or search settings.

@@ -1,0 +1,867 @@
+{
+  "report_type": "supplementary frozen-model diagnostic; not independent headline evaluation",
+  "source_file": "data/real/week3-questions.csv",
+  "source_sha256": "24890592f13e014932598d199de8e19942a2b9c37f3c382c088167c6834922c4",
+  "source_split_values": {
+    "train": 60
+  },
+  "source_authorship_provenance": "Not provided in the CSV; independence not established",
+  "source_topic_counts": {
+    "Definiciones operativas y académicas": 3,
+    "Circunstancias para presentar el examen de ingreso": 3,
+    "Requisito de examen de ingreso": 3,
+    "Requisitos de documentación para admisión": 3,
+    "Revalidación de estudios en el extranjero": 3,
+    "Cambio de carrera para nuevo ingreso": 3,
+    "Cambio de carrera y turno": 3,
+    "Criterios generales de acreditación": 3,
+    "Requisito de inglés para modelo BIS": 3,
+    "Períodos escolares cuatrimestrales": 3,
+    "Restricción de inscripción simultánea": 3,
+    "Reincorporación académica": 3,
+    "Baja temporal y límite de cursado": 3,
+    "Definición de evaluación académica": 3,
+    "Calificación mínima aprobatoria": 3,
+    "Requisito de aprobación de asignatura": 3,
+    "Requisitos para evaluación ordinaria (asistencia)": 3,
+    "Servicio social y estadía profesional": 3,
+    "Derechos de los estudiantes": 3,
+    "Obligaciones de los estudiantes": 3
+  },
+  "duplicate_question_ids": 0,
+  "normalized_exact_overlap_with_frozen_training": 0,
+  "normalized_exact_overlap_with_existing_development": 0,
+  "frozen_model_sha256": "79e62ddd6f22f8f8021a44d542c680bc481d0d199ca584dacbf32f8e335e07f5",
+  "settings": {
+    "min_topic_probability": 0.25,
+    "min_lexical_score": 0.25
+  },
+  "eligible_questions": 60,
+  "top_three_hits": 29,
+  "top_three_hit_rate": 0.48333333333333334,
+  "answerable_abstentions": 17,
+  "out_of_scope_questions": 0,
+  "headline_result_eligible": false,
+  "limitation": "The source marks every record as train and does not identify an independent authoring team. Do not report this diagnostic as the final independent result.",
+  "details": [
+    {
+      "question_id": "Q9061",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "csv_topic": "Definiciones operativas y académicas",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.2045311021571208,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9062",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "csv_topic": "Definiciones operativas y académicas",
+      "predicted_topic": "Acreditación de asignaturas",
+      "topic_probability": 0.23802850212677537,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9063",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "csv_topic": "Definiciones operativas y académicas",
+      "predicted_topic": "Calificación mínima aprobatoria",
+      "topic_probability": 0.2757355839032815,
+      "displayed_article_ids": [
+        "2",
+        "21"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9064",
+      "accepted_article_ids": [
+        "5"
+      ],
+      "csv_topic": "Circunstancias para presentar el examen de ingreso",
+      "predicted_topic": "Cambio de carrera y turno",
+      "topic_probability": 0.6629937712430115,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9065",
+      "accepted_article_ids": [
+        "5"
+      ],
+      "csv_topic": "Circunstancias para presentar el examen de ingreso",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.49019561740095585,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9066",
+      "accepted_article_ids": [
+        "5"
+      ],
+      "csv_topic": "Circunstancias para presentar el examen de ingreso",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.19405688829468373,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9067",
+      "accepted_article_ids": [
+        "4"
+      ],
+      "csv_topic": "Requisito de examen de ingreso",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.7007989169592342,
+      "displayed_article_ids": [
+        "4",
+        "5"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9068",
+      "accepted_article_ids": [
+        "4"
+      ],
+      "csv_topic": "Requisito de examen de ingreso",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.4705416929362008,
+      "displayed_article_ids": [
+        "4",
+        "5"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9069",
+      "accepted_article_ids": [
+        "4"
+      ],
+      "csv_topic": "Requisito de examen de ingreso",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.4723839176385459,
+      "displayed_article_ids": [
+        "4",
+        "5"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9070",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "csv_topic": "Requisitos de documentación para admisión",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.17661449106331273,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9071",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "csv_topic": "Requisitos de documentación para admisión",
+      "predicted_topic": "Cambio de carrera y turno",
+      "topic_probability": 0.19051931117301688,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9072",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "csv_topic": "Requisitos de documentación para admisión",
+      "predicted_topic": "Documentación de admisión",
+      "topic_probability": 0.5939831181862377,
+      "displayed_article_ids": [
+        "6"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9073",
+      "accepted_article_ids": [
+        "7"
+      ],
+      "csv_topic": "Revalidación de estudios en el extranjero",
+      "predicted_topic": "Estudios en el extranjero",
+      "topic_probability": 0.7209297321216919,
+      "displayed_article_ids": [
+        "7"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9074",
+      "accepted_article_ids": [
+        "7"
+      ],
+      "csv_topic": "Revalidación de estudios en el extranjero",
+      "predicted_topic": "Estudios en el extranjero",
+      "topic_probability": 0.700550249928204,
+      "displayed_article_ids": [
+        "7"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9075",
+      "accepted_article_ids": [
+        "7"
+      ],
+      "csv_topic": "Revalidación de estudios en el extranjero",
+      "predicted_topic": "Documentación de admisión",
+      "topic_probability": 0.23326574748644704,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9076",
+      "accepted_article_ids": [
+        "8"
+      ],
+      "csv_topic": "Cambio de carrera para nuevo ingreso",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.8972853746054436,
+      "displayed_article_ids": [
+        "8"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9077",
+      "accepted_article_ids": [
+        "8"
+      ],
+      "csv_topic": "Cambio de carrera para nuevo ingreso",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.9858689610974223,
+      "displayed_article_ids": [
+        "8"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9078",
+      "accepted_article_ids": [
+        "8"
+      ],
+      "csv_topic": "Cambio de carrera para nuevo ingreso",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.7371088630484894,
+      "displayed_article_ids": [
+        "8"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9079",
+      "accepted_article_ids": [
+        "9"
+      ],
+      "csv_topic": "Cambio de carrera y turno",
+      "predicted_topic": "Cambio de carrera y turno",
+      "topic_probability": 0.7089253142369957,
+      "displayed_article_ids": [
+        "9"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9080",
+      "accepted_article_ids": [
+        "9"
+      ],
+      "csv_topic": "Cambio de carrera y turno",
+      "predicted_topic": "Estudios en el extranjero",
+      "topic_probability": 0.3176869643923212,
+      "displayed_article_ids": [
+        "7"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9081",
+      "accepted_article_ids": [
+        "9"
+      ],
+      "csv_topic": "Cambio de carrera y turno",
+      "predicted_topic": "Cambio de carrera y turno",
+      "topic_probability": 0.5531648694906346,
+      "displayed_article_ids": [
+        "9"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9082",
+      "accepted_article_ids": [
+        "10"
+      ],
+      "csv_topic": "Criterios generales de acreditación",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.7169333274242858,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9083",
+      "accepted_article_ids": [
+        "10"
+      ],
+      "csv_topic": "Criterios generales de acreditación",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.4143544569680647,
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9084",
+      "accepted_article_ids": [
+        "10"
+      ],
+      "csv_topic": "Criterios generales de acreditación",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.31397461177012304,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9085",
+      "accepted_article_ids": [
+        "10 BIS"
+      ],
+      "csv_topic": "Requisito de inglés para modelo BIS",
+      "predicted_topic": "Certificación de inglés BIS",
+      "topic_probability": 0.4347403008924899,
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9086",
+      "accepted_article_ids": [
+        "10 BIS"
+      ],
+      "csv_topic": "Requisito de inglés para modelo BIS",
+      "predicted_topic": "Certificación de inglés BIS",
+      "topic_probability": 0.40132717034473897,
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9087",
+      "accepted_article_ids": [
+        "10 BIS"
+      ],
+      "csv_topic": "Requisito de inglés para modelo BIS",
+      "predicted_topic": "Certificación de inglés BIS",
+      "topic_probability": 0.7707498860721355,
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9088",
+      "accepted_article_ids": [
+        "13"
+      ],
+      "csv_topic": "Períodos escolares cuatrimestrales",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.7253916974237679,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9089",
+      "accepted_article_ids": [
+        "13"
+      ],
+      "csv_topic": "Períodos escolares cuatrimestrales",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.7662931328719884,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9090",
+      "accepted_article_ids": [
+        "13"
+      ],
+      "csv_topic": "Períodos escolares cuatrimestrales",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.978339117102133,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9091",
+      "accepted_article_ids": [
+        "16"
+      ],
+      "csv_topic": "Restricción de inscripción simultánea",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.19736688700449853,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9092",
+      "accepted_article_ids": [
+        "16"
+      ],
+      "csv_topic": "Restricción de inscripción simultánea",
+      "predicted_topic": "Inscripción simultánea",
+      "topic_probability": 0.3099856306672576,
+      "displayed_article_ids": [
+        "16"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9093",
+      "accepted_article_ids": [
+        "16"
+      ],
+      "csv_topic": "Restricción de inscripción simultánea",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.24624932731610963,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9094",
+      "accepted_article_ids": [
+        "18"
+      ],
+      "csv_topic": "Reincorporación académica",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.2835706621267514,
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9095",
+      "accepted_article_ids": [
+        "18"
+      ],
+      "csv_topic": "Reincorporación académica",
+      "predicted_topic": "Cambio de carrera y turno",
+      "topic_probability": 0.2611501288931789,
+      "displayed_article_ids": [
+        "9"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9096",
+      "accepted_article_ids": [
+        "18"
+      ],
+      "csv_topic": "Reincorporación académica",
+      "predicted_topic": "Cambio de carrera de nuevo ingreso",
+      "topic_probability": 0.5033661484645108,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9097",
+      "accepted_article_ids": [
+        "19"
+      ],
+      "csv_topic": "Baja temporal y límite de cursado",
+      "predicted_topic": "Clasificación de estudiantes",
+      "topic_probability": 0.4728107596383001,
+      "displayed_article_ids": [
+        "3"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9098",
+      "accepted_article_ids": [
+        "19"
+      ],
+      "csv_topic": "Baja temporal y límite de cursado",
+      "predicted_topic": "Clasificación de estudiantes",
+      "topic_probability": 0.3632245925721195,
+      "displayed_article_ids": [
+        "3"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9099",
+      "accepted_article_ids": [
+        "19"
+      ],
+      "csv_topic": "Baja temporal y límite de cursado",
+      "predicted_topic": "Clasificación de estudiantes",
+      "topic_probability": 0.18295610577434177,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9100",
+      "accepted_article_ids": [
+        "20"
+      ],
+      "csv_topic": "Definición de evaluación académica",
+      "predicted_topic": "Evaluación académica",
+      "topic_probability": 0.19216669811305195,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9101",
+      "accepted_article_ids": [
+        "20"
+      ],
+      "csv_topic": "Definición de evaluación académica",
+      "predicted_topic": "Evaluación académica",
+      "topic_probability": 0.415380462530657,
+      "displayed_article_ids": [
+        "20"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9102",
+      "accepted_article_ids": [
+        "20"
+      ],
+      "csv_topic": "Definición de evaluación académica",
+      "predicted_topic": "Evaluación académica",
+      "topic_probability": 0.3267390457912863,
+      "displayed_article_ids": [
+        "20"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9103",
+      "accepted_article_ids": [
+        "21"
+      ],
+      "csv_topic": "Calificación mínima aprobatoria",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.3274895486845344,
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9104",
+      "accepted_article_ids": [
+        "21"
+      ],
+      "csv_topic": "Calificación mínima aprobatoria",
+      "predicted_topic": "Certificación de inglés BIS",
+      "topic_probability": 0.29026906400335734,
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9105",
+      "accepted_article_ids": [
+        "21"
+      ],
+      "csv_topic": "Calificación mínima aprobatoria",
+      "predicted_topic": "Calificación mínima aprobatoria",
+      "topic_probability": 0.36011406163587945,
+      "displayed_article_ids": [
+        "21",
+        "2"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9106",
+      "accepted_article_ids": [
+        "30"
+      ],
+      "csv_topic": "Requisito de aprobación de asignatura",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.4037741553804903,
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9107",
+      "accepted_article_ids": [
+        "30"
+      ],
+      "csv_topic": "Requisito de aprobación de asignatura",
+      "predicted_topic": "Requisitos para aprobar una asignatura",
+      "topic_probability": 0.4430673568631969,
+      "displayed_article_ids": [
+        "30"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9108",
+      "accepted_article_ids": [
+        "30"
+      ],
+      "csv_topic": "Requisito de aprobación de asignatura",
+      "predicted_topic": "Requisitos para aprobar una asignatura",
+      "topic_probability": 0.13600291127467473,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9109",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "csv_topic": "Requisitos para evaluación ordinaria (asistencia)",
+      "predicted_topic": "Derecho a evaluación ordinaria",
+      "topic_probability": 0.8068919819598522,
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9110",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "csv_topic": "Requisitos para evaluación ordinaria (asistencia)",
+      "predicted_topic": "Examen de ingreso",
+      "topic_probability": 0.23604033762454935,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9111",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "csv_topic": "Requisitos para evaluación ordinaria (asistencia)",
+      "predicted_topic": "Derecho a evaluación ordinaria",
+      "topic_probability": 0.809396338713942,
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9112",
+      "accepted_article_ids": [
+        "43"
+      ],
+      "csv_topic": "Servicio social y estadía profesional",
+      "predicted_topic": "Servicio social y estadía",
+      "topic_probability": 0.983689642785233,
+      "displayed_article_ids": [
+        "43"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9113",
+      "accepted_article_ids": [
+        "43"
+      ],
+      "csv_topic": "Servicio social y estadía profesional",
+      "predicted_topic": "Servicio social y estadía",
+      "topic_probability": 0.806753218115052,
+      "displayed_article_ids": [
+        "43"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9114",
+      "accepted_article_ids": [
+        "43"
+      ],
+      "csv_topic": "Servicio social y estadía profesional",
+      "predicted_topic": "Servicio social y estadía",
+      "topic_probability": 0.9667401655076482,
+      "displayed_article_ids": [
+        "43"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9115",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "csv_topic": "Derechos de los estudiantes",
+      "predicted_topic": "Obligaciones de pago",
+      "topic_probability": 0.27668482395481137,
+      "displayed_article_ids": [
+        "48"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9116",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "csv_topic": "Derechos de los estudiantes",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.40817246032575655,
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": true,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9117",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "csv_topic": "Derechos de los estudiantes",
+      "predicted_topic": "Periodos escolares",
+      "topic_probability": 0.19439045528360158,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9118",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "csv_topic": "Obligaciones de los estudiantes",
+      "predicted_topic": "Documentación de admisión",
+      "topic_probability": 0.2439226880871677,
+      "displayed_article_ids": [],
+      "hit": false,
+      "abstained": true
+    },
+    {
+      "question_id": "Q9119",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "csv_topic": "Obligaciones de los estudiantes",
+      "predicted_topic": "Derecho a revisión de evaluaciones",
+      "topic_probability": 0.6309114260197306,
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": false,
+      "abstained": false
+    },
+    {
+      "question_id": "Q9120",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "csv_topic": "Obligaciones de los estudiantes",
+      "predicted_topic": "Certificación de inglés BIS",
+      "topic_probability": 0.36142094228351423,
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": false,
+      "abstained": false
+    }
+  ],
+  "incorrect_nonabstaining_returns": 14,
+  "error_breakdown": {
+    "abstentions_below_topic_gate": 14,
+    "abstentions_after_topic_gate": 3,
+    "wrong_topic_returns": 14,
+    "same_topic_wrong_article_returns": 0,
+    "csv_topic_label_strings_differ_from_catalog": 51
+  }
+}

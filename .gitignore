@@ -21,6 +21,7 @@ data/real/
 !data/real/
 data/real/*
 !data/real/README.md
+!data/real/week3-questions.csv
 !data/real/train/
 !data/real/train/**
 !data/real/dev/
