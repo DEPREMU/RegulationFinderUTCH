@@ -12,11 +12,11 @@ Status: blank outline; final report PENDING Emanuel and all contributors. Keep t
 
 ## Page 2 — evaluation, deployment and limitations
 
-- User-designated independent set: 60 answerable questions frozen; authoring-team provenance: **PENDING confirmation**.
-- Headline hits H/N and percentage (abstentions included as misses): **PENDING / PENDING**.
-- Answerable abstentions A/N and out-of-scope abstentions B/M: **PENDING**.
+- User-designated independent set: 60 answerable questions; authoring-team provenance: **PENDING confirmation from the source team**.
+- Headline hits H/N and percentage (abstentions included as misses): **32/60, 53.3%**.
+- Answerable abstentions A/N: **19/60**. Out-of-scope examples: **0**, so no out-of-scope abstention rate is available.
 - Actual Pi model/RAM, OS/Python, iterations, procedure, latency median/p95 and process peak RSS: **PENDING**.
-- Week 3 identifiers: dataset fingerprint `80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed`; model SHA-256 `986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4`; code revision and dependency-lock hash are recorded in the training manifest. Development errors and limitations are summarized in the model-release document. Independent test result remains **PENDING**.
+- Week 3 identifiers: dataset fingerprint `80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed`; model SHA-256 `986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4`; code revision and dependency-lock hash are recorded in the training manifest. Development and final evaluation errors are summarized in the model-release document.
 - Contributions/code/presentation evidence per member and weekly logs: **PENDING**.
 - Final deliverable references: live demo, authorized dataset, code and report: **PENDING**.
 

@@ -1,6 +1,6 @@
 # Week 3 model release
 
-Status: the expanded training run is frozen. The user-designated independent questions are frozen in `data/real/week3-independent-questions.csv`; their one-time evaluation is pending. The Week 3 questions supplied earlier are training data and cannot be reused as a final test set.
+Status: the expanded training run and user-designated independent questions are frozen. The one-time final evaluation is complete. The CSV does not identify its authoring team, and no out-of-scope questions were included. The earlier Week 3 questions are training data and cannot be reused as a final test set.
 
 ## Training data and frozen release
 
@@ -59,22 +59,20 @@ The development set has no out-of-scope questions, so it does not measure false 
 
 The earlier `artifacts/training/week3-questions-diagnostic.json` records a run of the Week 2 model made before the 60 questions were added to training. It is retained only as a historical record and is explicitly ineligible as a measure of current model performance.
 
-## Independent evaluation handoff
+## Independent evaluation result and errors
 
-The user designated `data/real/week3-independent-questions.csv` as the independent set. It contains 60 answerable questions with valid article IDs, unique IDs and no normalized exact overlap with training or development. Pairwise token-overlap checks found no question pairs at Jaccard 0.50 or higher; some questions still address the same article-level facts. The CSV has no authoring-team field, so that provenance limitation is recorded. Its SHA-256, model hash, dataset fingerprint, development file hash and settings were frozen in `artifacts/training/week3-independent-evaluation-freeze.json` before evaluation.
+The user-designated set contained 60 answerable questions with valid article IDs, unique IDs and no normalized exact overlap with training or development. Pairwise token-overlap checks found no question pairs at Jaccard 0.50 or higher; some questions address the same article-level facts. The CSV does not identify its authoring team, so the result is user-designated as independent but that provenance cannot be independently confirmed from the file.
 
-Run the frozen set once with the selected Week 3 model and settings:
+The model returned a correct article in the displayed top three for **32/60 questions (53.3%)**. It abstained on **19/60 (31.7%)**; the other 9 misses returned articles without the accepted article. Abstentions remain misses in the headline denominator. The set contains no out-of-scope questions, so false returns on out-of-scope queries were not measured.
 
-```sh
-uv run --frozen python scripts/evaluate_independent_questions.py \
-  --data data/real/week3-prepared \
-  --questions data/real/week3-independent-questions.csv \
-  --model artifacts/training/week3-real-model.json \
-  --settings artifacts/training/week3-selected-settings.json \
-  --freeze artifacts/training/week3-independent-evaluation-freeze.json \
-  --output artifacts/training/week3-independent-evaluation.json
-```
+The 28 misses were concentrated in article 47 (8 misses), article 48 (11) and article 6 (5). The remaining four were split across articles 2 (2), 8 (1) and 20 (1). Observed examples:
 
-The runner checks the frozen hashes and refuses to overwrite an existing report. Keep answerable abstentions in the headline denominator. Do not tune using final evaluation results.
+| Question | Expected | Returned | Observed error |
+| --- | --- | --- | --- |
+| `Q9123` | Article 2 | Article 5 | A question distinguishing NA from AU retrieved the entrance-exam conditions. |
+| `Q9128` | Article 6 | Articles 4 and 5 | An admissions-document question retrieved entrance-exam rules. |
+| `Q9148` | Article 20 | Articles 21 and 2 | A question about learning evaluation retrieved grading and definition articles. |
+| `Q9161` | Article 47 | Article 48 | A student-rights question about company practice retrieved student obligations. |
+| `Q9179` | Article 48 | Articles 2 and 21 | A fee-obligation question retrieved grading articles. |
 
-After evaluation, document observed errors and limitations without changing the model based on those questions. Any change after final testing requires a fresh independent test set for a new headline result.
+The full per-question output is `artifacts/training/week3-independent-evaluation.json`; the frozen inputs and headline summary are recorded in `artifacts/training/week3-independent-evaluation-freeze.json` and `artifacts/training/week3-independent-evaluation-finalization.json`. No model or settings changes were made after this run. Any change after final testing requires a fresh independent test set for a new headline result.

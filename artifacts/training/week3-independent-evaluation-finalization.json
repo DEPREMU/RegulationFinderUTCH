@@ -1,0 +1,50 @@
+{
+  "evaluation_status": "completed once with the frozen set, model and settings",
+  "evaluation_date": "2026-11-05",
+  "freeze_commit": "205066e",
+  "freeze_manifest_sha256": "9857655e999a73b20dcd33a89de4aff7f46a2e7be39e64757c032d49f130cd35",
+  "evaluation_report": "artifacts/training/week3-independent-evaluation.json",
+  "evaluation_report_sha256": "22d8088af345a27726b4d51a1b7a1ad02b75f9e164bae6ce525bf23435de5bee",
+  "source_sha256": "1fc21e1062b82c64f2bcd00046d7ddf81172e050a2f1c1943040d938a9f01252",
+  "model_sha256": "986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4",
+  "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+  "settings": {
+    "min_topic_probability": 0.35,
+    "min_lexical_score": 0.25
+  },
+  "headline": {
+    "top_three_hits": 32,
+    "eligible_questions": 60,
+    "top_three_hit_rate": 0.5333333333333333,
+    "answerable_abstentions": 19,
+    "answerable_abstention_rate": 0.31666666666666665,
+    "non_abstaining_misses": 9,
+    "out_of_scope_questions": 0
+  },
+  "misses_by_expected_article_and_type": {
+    "article_2_abstention": 1,
+    "article_2_incorrect_return": 1,
+    "article_20_incorrect_return": 1,
+    "article_47_abstention": 5,
+    "article_47_incorrect_return": 3,
+    "article_48_abstention": 9,
+    "article_48_incorrect_return": 2,
+    "article_6_abstention": 4,
+    "article_6_incorrect_return": 1,
+    "article_8_incorrect_return": 1
+  },
+  "incorrect_displayed_article_counts": {
+    "5": 4,
+    "4": 3,
+    "21": 2,
+    "2": 2,
+    "48": 1,
+    "10 BIS": 1,
+    "10": 1
+  },
+  "error_summary": "28 misses: 19 abstentions and 9 non-abstaining misses. Misses cluster around articles 47 (8), 48 (11), and 6 (5).",
+  "source_authorship_provenance": "The user designated this as independent. The CSV does not identify the authoring team.",
+  "evaluation_used_for_tuning": false,
+  "model_or_settings_changed_after_evaluation": false,
+  "limitation": "The source CSV does not identify the authoring team; it was designated independent by the user. No out-of-scope questions were included."
+}
