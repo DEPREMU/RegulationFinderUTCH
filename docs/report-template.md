@@ -12,7 +12,7 @@ Status: blank outline; final report PENDING Emanuel and all contributors. Keep t
 
 ## Page 2 — evaluation, deployment and limitations
 
-- Another team's authorship/provenance; independent frozen test N (at least 60): **PENDING**.
+- User-designated independent set: 60 answerable questions frozen; authoring-team provenance: **PENDING confirmation**.
 - Headline hits H/N and percentage (abstentions included as misses): **PENDING / PENDING**.
 - Answerable abstentions A/N and out-of-scope abstentions B/M: **PENDING**.
 - Actual Pi model/RAM, OS/Python, iterations, procedure, latency median/p95 and process peak RSS: **PENDING**.

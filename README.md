@@ -71,7 +71,7 @@ The adapter preserves the `train`/`dev` assignments, allows multiple queries to 
 - One row per article, original text retained: 22 articles are included in the Week 2 prepared dataset; confirm institutional permission and provenance before redistribution.
 - School permission confirmed with instructor, source/provenance and redistribution terms: **pending Karen/instructor**. Software license is also a team decision; no license selected.
 - Training/development runs: Week 2 used 60 training questions; Week 3 combines those with 60 additional training questions. Both use 20 development pairs; the final evaluation set remains separate and unused.
-- At least 60 independent questions from another team and a frozen final top-three evaluation: **pending Emanuel**. The Week 2 development results do not satisfy this requirement.
+- User-designated 60-question evaluation set is frozen in `data/real/week3-independent-questions.csv`; its CSV does not identify the authoring team. The one-time top-three evaluation is pending, as is confirmation of authoring-team provenance.
 - Actual Raspberry Pi model, OS, installation, latency and memory measurements: **pending Betsy**.
 - Live demo, dataset, code and two-page technical report: templates and procedures ready; final deliverables **pending**.
 - Everyone codes, presents and maintains short weekly logs: blank templates provided; actual contributions/presentation evidence **pending**.

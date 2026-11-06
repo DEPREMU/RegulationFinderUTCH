@@ -1,6 +1,6 @@
 # Week 3 model release
 
-Status: the expanded training run is frozen for independent evaluation. The final independent evaluation has not been run. The Week 3 questions supplied by the project owner are now training data and cannot be reused as a final test set.
+Status: the expanded training run is frozen. The user-designated independent questions are frozen in `data/real/week3-independent-questions.csv`; their one-time evaluation is pending. The Week 3 questions supplied earlier are training data and cannot be reused as a final test set.
 
 ## Training data and frozen release
 
@@ -61,6 +61,20 @@ The earlier `artifacts/training/week3-questions-diagnostic.json` records a run o
 
 ## Independent evaluation handoff
 
-Obtain at least 60 answerable questions independently authored by another team, with accepted article IDs and provenance. Freeze that file and record its SHA-256 before running it once with the Week 3 model hash, dataset fingerprint, dependency lock, code revision and selected settings. Keep answerable abstentions in the headline denominator. Do not tune using final evaluation results.
+The user designated `data/real/week3-independent-questions.csv` as the independent set. It contains 60 answerable questions with valid article IDs, unique IDs and no normalized exact overlap with training or development. Pairwise token-overlap checks found no question pairs at Jaccard 0.50 or higher; some questions still address the same article-level facts. The CSV has no authoring-team field, so that provenance limitation is recorded. Its SHA-256, model hash, dataset fingerprint, development file hash and settings were frozen in `artifacts/training/week3-independent-evaluation-freeze.json` before evaluation.
+
+Run the frozen set once with the selected Week 3 model and settings:
+
+```sh
+uv run --frozen python scripts/evaluate_independent_questions.py \
+  --data data/real/week3-prepared \
+  --questions data/real/week3-independent-questions.csv \
+  --model artifacts/training/week3-real-model.json \
+  --settings artifacts/training/week3-selected-settings.json \
+  --freeze artifacts/training/week3-independent-evaluation-freeze.json \
+  --output artifacts/training/week3-independent-evaluation.json
+```
+
+The runner checks the frozen hashes and refuses to overwrite an existing report. Keep answerable abstentions in the headline denominator. Do not tune using final evaluation results.
 
 After evaluation, document observed errors and limitations without changing the model based on those questions. Any change after final testing requires a fresh independent test set for a new headline result.

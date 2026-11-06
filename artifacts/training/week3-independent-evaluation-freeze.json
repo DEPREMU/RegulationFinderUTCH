@@ -1,0 +1,41 @@
+{
+  "freeze_date": "2026-11-05",
+  "set_id": "utch-week3-independent-user-designated-v1.0",
+  "source_file": "data/real/week3-independent-questions.csv",
+  "source_sha256": "1fc21e1062b82c64f2bcd00046d7ddf81172e050a2f1c1943040d938a9f01252",
+  "question_count": 60,
+  "answerable_questions": 60,
+  "source_authorship_provenance": "The user designated this file as independent. The CSV does not identify the authoring team.",
+  "validation": {
+    "unique_question_ids": true,
+    "unique_normalized_question_text": true,
+    "normalized_exact_overlap_with_training": 0,
+    "normalized_exact_overlap_with_development": 0,
+    "unknown_article_ids": 0
+  },
+  "model_training_revision": "da42fee",
+  "dataset_id": "utch-week3-train120-dev20-v1.0",
+  "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+  "development_file_sha256": "167f6d237c26181530a7215775e8a51192669ef98d54b6f7ad2de53b6839b4e5",
+  "model_file": "artifacts/training/week3-real-model.json",
+  "model_sha256": "986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4",
+  "settings_file": "artifacts/training/week3-selected-settings.json",
+  "settings": {
+    "min_topic_probability": 0.35,
+    "min_lexical_score": 0.25
+  },
+  "headline_definition": "Top-three hits divided by all answerable questions; abstentions are misses.",
+  "evaluation_used_for_tuning": false,
+  "result_status": "pending",
+  "evaluation_runner": "scripts/evaluate_independent_questions.py",
+  "evaluation_runner_sha256": "2bb82dc95d480fd58c234469fcfb5e6cdb897db37f4e106600367806826901b0",
+  "settings_sha256": "40812e4725ed89a7e5d63dc12403c3c1cdfe2c29e42ae6ac2ddebc2eccd2e6cf",
+  "dependency_lock_sha256": "d4289d43b85395d38b3d7ec6e5ae303ed7ce2a2d6711157614d05c2b51fac8d2",
+  "near_paraphrase_review": {
+    "method": "Pairwise Jaccard similarity on normalized question tokens against training and development questions.",
+    "pairs_at_or_above_0_50": 0,
+    "maximum_training_pair_similarity": 0.4375,
+    "maximum_development_pair_similarity": 0.4,
+    "note": "Some questions address the same article-level facts. The user designated this set as independent; authoring-team provenance is not present in the CSV."
+  }
+}
