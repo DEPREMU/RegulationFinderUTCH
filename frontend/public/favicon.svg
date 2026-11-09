@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="45 52 460 410" role="img" aria-labelledby="title">
+<title id="title">RegulationFinder favicon</title>
+
+<!-- Open regulation book -->
+<path d="M70 130 L70 386 Q160 358 248 414 Q336 358 442 386 L442 130" fill="none" stroke="#393E41" stroke-width="23" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M96 91 L96 358 Q173 332 248 391 Q322 332 416 358 L416 91 Q320 78 248 157 Q172 78 96 91Z" fill="#FFFFFF" stroke="#44494D" stroke-width="19" stroke-linejoin="round"/>
+<path d="M248 157 L248 391" stroke="#B2B8BC" stroke-width="6" fill="none"/>
+<path d="M121 169 Q169 163 211 185 M121 215 Q168 211 211 233 M121 261 Q169 260 211 279 M121 306 Q161 304 195 319" fill="none" stroke="#A6ADB1" stroke-width="12" stroke-linecap="round"/>
+<path d="M286 181 Q337 160 385 170" fill="none" stroke="#A6ADB1" stroke-width="12" stroke-linecap="round"/>
+<!-- Green bookmark -->
+<path d="M120 85 H161 V168 L140.5 151 L120 168Z" fill="#499B11"/>
+<!-- Search magnifier, with white knockout for crisp silhouette -->
+<circle cx="346" cy="273" r="92" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="20"/>
+<path d="M414 341 L471 397" stroke="#FFFFFF" stroke-width="42" stroke-linecap="round"/>
+<circle cx="346" cy="273" r="84" fill="#FFFFFF" stroke="#393E41" stroke-width="21"/>
+<path d="M409 336 L471 398" fill="none" stroke="#393E41" stroke-width="25" stroke-linecap="round"/>
+<path d="M305 243 H386 M305 273 H381 M310 303 H365" fill="none" stroke="#489B10" stroke-width="13" stroke-linecap="round"/>
+
+</svg>
