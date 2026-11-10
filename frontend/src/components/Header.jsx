@@ -13,12 +13,6 @@ export default function Header() {
         </div>
       </div>
 
-      <nav className="header__nav" aria-label="Principal">
-        <a className="header__link header__link--active" href="#consultar" aria-current="page">
-          Consultar
-        </a>
-      </nav>
-
       <div className="header__utch">
         <img className="header__logo-bis" src={bisLogo} alt="BIS" />
         <img className="header__logo-utch" src={utchLogo} alt="Universidad Tecnológica de Chihuahua" />

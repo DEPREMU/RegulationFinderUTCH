@@ -12,41 +12,35 @@ export default function ArticleCard({ article, index }) {
 
   return (
     <article className="article" style={{ '--i': index }}>
-      <header className="article__head">
-        <div className="article__number-block">
-          <span className="eyebrow">Artículo</span>
-          <span className="article__number">{article.number}</span>
+      <div className="article__side">
+        <span className="article__label">Artículo</span>
+        <span className="article__number">{article.number}</span>
+        <span className="article__result">Resultado {index + 1}</span>
+      </div>
+
+      <div className="article__main">
+        {article.topic && <h3 className="article__topic">{article.topic}</h3>}
+
+        <div className="article__body">
+          <p className="eyebrow eyebrow--muted">Texto original</p>
+          <p className="article__text">{shown}</p>
         </div>
 
-        <div>
-          <p className="article__result">
-            Resultado {index + 1} · Texto original
-          </p>
-          <h3 className="article__document">{article.document}</h3>
-          {article.topic && (
-            <p className="eyebrow">{article.topic}</p>
+        <footer className="article__foot">
+          <span className="article__source">Fuente: {article.document}</span>
+          {isLong && (
+            <button
+              type="button"
+              className="article__toggle"
+              onClick={() => setExpanded((value) => !value)}
+              aria-expanded={expanded}
+            >
+              {expanded ? 'Contraer artículo' : 'Leer artículo completo'}
+              <span aria-hidden="true">{expanded ? ' ⌃' : ' ⌄'}</span>
+            </button>
           )}
-        </div>
-      </header>
-
-      <p className="article__text">{shown}</p>
-
-      {isLong && (
-        <button
-          type="button"
-          className="article__toggle"
-          onClick={() => setExpanded((value) => !value)}
-          aria-expanded={expanded}
-        >
-          {expanded ? 'Contraer artículo' : 'Leer artículo completo'}
-          <span aria-hidden="true">{expanded ? ' ⌃' : ' ⌄'}</span>
-        </button>
-      )}
-
-      <footer className="article__foot">
-        <span>Texto original · Fuente documental</span>
-        <span>{article.document}</span>
-      </footer>
+        </footer>
+      </div>
     </article>
   )
 }

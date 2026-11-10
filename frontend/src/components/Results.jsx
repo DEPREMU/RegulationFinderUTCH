@@ -1,6 +1,4 @@
 import ArticleCard from './ArticleCard.jsx'
-import BrandSymbol from './BrandSymbol.jsx'
-import Folio from './Folio.jsx'
 import InfoNotice from './InfoNotice.jsx'
 
 export default function Results({ articles }) {
@@ -8,25 +6,18 @@ export default function Results({ articles }) {
 
   return (
     <section className="results" aria-labelledby="results-title">
-      <div className="results__top">
-        <div className="results__signature">
-          <BrandSymbol size={24} />
-          <div>
-            <p className="results__sig-name">Regulation Finder</p>
-            <p className="results__sig-tag">Sistema de búsqueda documental</p>
-          </div>
+      <div className="results__head">
+        <div>
+          <p className="eyebrow">
+            {articles.length} {articles.length === 1 ? 'artículo' : 'artículos'} · {documents}{' '}
+            {documents === 1 ? 'documento' : 'documentos'}
+          </p>
+          <h2 id="results-title" className="display display--medium">
+            Resultados de búsqueda
+          </h2>
         </div>
-        <Folio expression="results" size={64} />
+        <p className="results__note">Texto original · sin interpretaciones</p>
       </div>
-
-      <p className="eyebrow">
-        {articles.length} {articles.length === 1 ? 'artículo' : 'artículos'} / {documents}{' '}
-        {documents === 1 ? 'documento' : 'documentos'}
-      </p>
-      <h2 id="results-title" className="display">
-        Resultados de búsqueda
-      </h2>
-      <p className="lead lead--small">Artículos recuperados para tu consulta. Sin resúmenes ni interpretaciones.</p>
 
       <InfoNotice />
 
