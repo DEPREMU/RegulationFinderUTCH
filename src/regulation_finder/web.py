@@ -1,4 +1,3 @@
-
 """Server-rendered and JSON article search; no generated answers."""
 
 from flask import Flask, jsonify, render_template, request
@@ -43,18 +42,20 @@ def create_app(retriever):
         else:
             status = "empty"
 
-        return jsonify({
-            "status": status,
-            "suggestion": FALLBACK if status == "low_match" else "",
-            "articles": [
-                {
-                    "article_id": article.article_id,
-                    "text": article.text,
-                    "topic": article.topic,
-                    "source": article.source,
-                }
-                for article in result.articles[:3]
-            ],
-        })
+        return jsonify(
+            {
+                "status": status,
+                "suggestion": FALLBACK if status == "low_match" else "",
+                "articles": [
+                    {
+                        "article_id": article.article_id,
+                        "text": article.text,
+                        "topic": article.topic,
+                        "source": article.source,
+                    }
+                    for article in result.articles[:3]
+                ],
+            }
+        )
 
     return app

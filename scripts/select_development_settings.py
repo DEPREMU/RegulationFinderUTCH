@@ -4,7 +4,6 @@ import argparse
 import json
 from pathlib import Path
 
-
 OBJECTIVE = (
     "Maximize development top-three hits; among tied settings, choose the highest "
     "combined thresholds, then the higher topic threshold and lexical threshold."
