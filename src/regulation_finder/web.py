@@ -1,25 +1,31 @@
-"""Server-rendered and JSON article search; no generated answers."""
+"""Flask server for the React frontend and JSON article search."""
 
-from flask import Flask, jsonify, render_template, request
+from pathlib import Path
 
-from .config import FALLBACK, NOTICE
+from flask import Flask, jsonify, render_template, request, send_from_directory
+
+from .config import FALLBACK
+
+
+FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
 
 
 def create_app(retriever):
-    app = Flask(__name__)
+    app = Flask(
+        __name__,
+        static_folder=str(FRONTEND_DIST / "assets"),
+        static_url_path="/assets",
+        template_folder=str(FRONTEND_DIST),
+    )
     app.config["MAX_CONTENT_LENGTH"] = 16384
 
-    @app.route("/", methods=["GET", "POST"])
+    @app.route("/", methods=["GET"])
     def index():
-        question = request.form.get("question", "") if request.method == "POST" else ""
-        result = retriever.search(question) if request.method == "POST" else None
-        return render_template(
-            "index.html",
-            question=question,
-            result=result,
-            notice=NOTICE,
-            synthetic=retriever.dataset.metadata["synthetic"],
-        )
+        return render_template("index.html")
+
+    @app.route("/favicon.svg", methods=["GET"])
+    def favicon():
+        return send_from_directory(FRONTEND_DIST, "favicon.svg")
 
     @app.route("/api/search", methods=["POST"])
     def api_search():

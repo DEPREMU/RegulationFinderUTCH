@@ -48,7 +48,6 @@ export default function App() {
     setStatus('loading')
     setAnnouncement('Consultando documentos disponibles…')
     setHistory((prev) => [text, ...prev.filter((item) => item !== text)].slice(0, MAX_HISTORY))
-    setHistoryOpen(false)
 
     try {
       const result = await searchArticles(text)
