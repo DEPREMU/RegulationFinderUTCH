@@ -6,10 +6,12 @@ This repository is preparation, not the completed assignment. Everything under `
 
 ## Setup and synthetic demo
 
-Target Python 3.10+ on Linux, including Raspberry Pi with compatible wheels; actual Pi compatibility is pending. Development was verified on Python 3.12.3. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (resolution tooling used: 0.12.5), then from the repository root:
+Target Python 3.10+ on Linux, including Raspberry Pi with compatible wheels; actual Pi compatibility is pending. Development was verified on Python 3.12.3. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (resolution tooling used: 0.12.5) and Node.js/npm (to build the local React UI served by Flask), then from the repository root:
 
 ```sh
 uv sync --frozen
+npm --prefix frontend ci
+npm --prefix frontend run build
 uv run --frozen regulation-finder validate
 uv run --frozen regulation-finder train
 uv run --frozen regulation-finder search 'library books return receipt'
@@ -53,6 +55,24 @@ uv run --frozen regulation-finder --data data/real/prepared --model artifacts/tr
 The selected thresholds (`0.25` topic probability and `0.25` lexical coverage) are recorded in `artifacts/training/selected-settings.json` and used by default. On the 20 development examples, this setting retrieves a correct article in the top three for 14 queries; 4 answerable queries abstain. The grid and evaluation reports are reproducible with the commands above. No out-of-scope development examples were available to measure false returns, and the final evaluation set remains separate and unused.
 
 The Week 3 release adds the user-supplied 60 questions marked `train` to the original 60, mapping each question to the prepared catalog topic for its article number. Its dataset is `data/real/week3-prepared/`, and the frozen model is `artifacts/training/week3-real-model.json`. The Week 3 configuration uses topic probability `0.35` and lexical coverage `0.25`; pass both values explicitly when searching or evaluating with this model. Reproduction commands and development results are in [the Week 3 model release record](docs/week-3-model-release.md). These questions are training data, not an independent test set.
+
+## Submission-ready release and live demo launch (Week 4)
+
+To reproduce the evaluated Week 3 model release and launch the live demo on any team member's machine (after `uv sync --frozen` and `npm --prefix frontend ci && npm --prefix frontend run build` above):
+
+```sh
+sha256sum artifacts/training/week3-real-model.json
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json validate
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json --min-topic-probability 0.35 --min-lexical-score 0.25 search '¿Cuál es la calificación mínima aprobatoria?'
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json --min-topic-probability 0.35 --min-lexical-score 0.25 web
+```
+
+- Frozen evaluated model: `artifacts/training/week3-real-model.json` (SHA-256 `986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4`)
+- Dataset: `data/real/week3-prepared` (`utch-week3-train120-dev20-v1.0`, fingerprint `80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed`)
+- Selected settings: `artifacts/training/week3-selected-settings.json` (`min_topic_probability = 0.35`, `min_lexical_score = 0.25`)
+- Training/calibration manifest: `artifacts/training/week3-training-manifest.json`
+- Independent evaluation record: `artifacts/training/week3-independent-evaluation.json` (32/60 top-three hits, 53.3%)
+- Model review & presentation segment: [Week 4 model presentation](docs/week-4-model-presentation.md)
 
 The legacy flat query/article-pair adapter can still be used with:
 
