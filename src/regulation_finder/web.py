@@ -6,7 +6,6 @@ from flask import Flask, jsonify, render_template, request, send_from_directory
 
 from .config import FALLBACK
 
-
 FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
 
 
