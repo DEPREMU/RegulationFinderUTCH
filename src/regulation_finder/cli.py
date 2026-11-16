@@ -22,9 +22,7 @@ def main(argv=None):
     parser.add_argument(
         "--min-topic-probability", type=float, default=Settings().min_topic_probability
     )
-    parser.add_argument(
-        "--min-lexical-score", type=float, default=Settings().min_lexical_score
-    )
+    parser.add_argument("--min-lexical-score", type=float, default=Settings().min_lexical_score)
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("validate")
     commands.add_parser("train")
@@ -51,9 +49,7 @@ def main(argv=None):
         dataset = load_dataset(
             args.data,
             include_development=args.command in {"validate", "evaluate", "calibrate", "measure"},
-            include_evaluation=(
-                args.command == "evaluate" and args.split == "evaluation"
-            ),
+            include_evaluation=(args.command == "evaluate" and args.split == "evaluation"),
         )
         common = {
             "dataset_id": dataset.metadata["dataset_id"],

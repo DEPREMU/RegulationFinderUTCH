@@ -1,0 +1,4 @@
+STATUS: automatic checks finished. Review each log and JSON.
+NOTE: these are development smoke and Raspberry Pi performance checks.
+NOTE: no final independent evaluation was rerun.
+MANUAL PENDING: web interface and full fresh-start checklist (see README).

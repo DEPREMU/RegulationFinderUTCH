@@ -27,7 +27,9 @@ def run(
     model_hash = hashlib.sha256(model_path.read_bytes()).hexdigest()
     settings_hash = hashlib.sha256(settings_path.read_bytes()).hexdigest()
     if freeze.get("result_status") != "pending":
-        raise ValueError("Evaluation freeze is not pending; use a new independent set for another result")
+        raise ValueError(
+            "Evaluation freeze is not pending; use a new independent set for another result"
+        )
     if freeze.get("source_sha256") != source_hash:
         raise ValueError("Question file hash does not match the frozen set")
     if freeze.get("model_sha256") != model_hash or freeze.get("settings_sha256") != settings_hash:
@@ -69,9 +71,7 @@ def run(
     if selected.get("dataset_fingerprint") != dataset.fingerprint:
         raise ValueError("Selected settings do not match the frozen dataset fingerprint")
     model = TopicClassifier.load(model_path, dataset.fingerprint)
-    settings = Settings(
-        selected["min_topic_probability"], selected["min_lexical_score"]
-    )
+    settings = Settings(selected["min_topic_probability"], selected["min_lexical_score"])
     retriever = Retriever(dataset, model, settings)
     report = evaluate(retriever, examples, [])
 
@@ -98,7 +98,9 @@ def run(
             "min_topic_probability": settings.min_topic_probability,
             "min_lexical_score": settings.min_lexical_score,
         },
-        "headline_definition": "Top-three hits divided by all answerable questions; abstentions are misses.",
+        "headline_definition": (
+            "Top-three hits divided by all answerable questions; abstentions are misses."
+        ),
         "independent_evaluation_used_for_tuning": False,
         **report,
     }
@@ -121,7 +123,13 @@ def main():
         args.output.write_text(
             json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
         )
-        print(json.dumps({k: v for k, v in report.items() if k != "details"}, ensure_ascii=False, indent=2))
+        print(
+            json.dumps(
+                {k: v for k, v in report.items() if k != "details"},
+                ensure_ascii=False,
+                indent=2,
+            )
+        )
     except (OSError, ValueError, KeyError, TypeError) as error:
         parser.exit(2, f"Error: {error}\n")
 
