@@ -68,7 +68,12 @@ def _rows(path: Path, cls, id_field: str):
     return result
 
 
-def load_dataset(directory: str | Path) -> Dataset:
+def load_dataset(
+    directory: str | Path,
+    *,
+    include_development: bool = True,
+    include_evaluation: bool = True,
+) -> Dataset:
     directory = Path(directory)
     metadata = json.loads((directory / "metadata.json").read_text(encoding="utf-8"))
     if not isinstance(metadata, dict) or not isinstance(metadata.get("synthetic"), bool):
@@ -78,10 +83,22 @@ def load_dataset(directory: str | Path) -> Dataset:
             raise ValueError(f"metadata.json requires {key}")
     articles = _rows(directory / "articles.json", Article, "article_id")
     training = _rows(directory / "training.json", TrainingExample, "example_id")
-    splits = [
-        _rows(directory / f"{name}.json", EvaluationExample, "question_id")
-        for name in ("development", "evaluation", "out_of_scope")
-    ]
+    development = (
+        _rows(directory / "development.json", EvaluationExample, "question_id")
+        if include_development
+        else []
+    )
+    evaluation = (
+        _rows(directory / "evaluation.json", EvaluationExample, "question_id")
+        if include_evaluation
+        else []
+    )
+    out_of_scope = (
+        _rows(directory / "out_of_scope.json", EvaluationExample, "question_id")
+        if include_evaluation
+        else []
+    )
+    splits = [development, evaluation, out_of_scope]
     if not articles or not training:
         raise ValueError("Articles and training examples must not be empty")
     topics = {a.topic for a in articles}
@@ -107,9 +124,19 @@ def load_dataset(directory: str | Path) -> Dataset:
             raise ValueError("Unknown article reference")
     if any(e.accepted_article_ids for e in splits[2]):
         raise ValueError("Out-of-scope examples must have no accepted articles")
-    names = ("metadata", "articles", "training", "development", "evaluation", "out_of_scope")
+    # A model depends on source articles and training examples only. In
+    # particular, the fingerprint must not require opening sealed holdouts.
+    names = ("metadata", "articles", "training")
     digest = hashlib.sha256()
     for name in names:
         digest.update(name.encode())
         digest.update((directory / f"{name}.json").read_bytes())
-    return Dataset(articles, training, *splits, metadata, digest.hexdigest())
+    return Dataset(
+        articles,
+        training,
+        development,
+        evaluation,
+        out_of_scope,
+        metadata,
+        digest.hexdigest(),
+    )

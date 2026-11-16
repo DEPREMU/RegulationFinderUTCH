@@ -1,0 +1,6 @@
+{
+  "dataset_id": "utch-week3-train120-dev20-v1.0",
+  "synthetic": false,
+  "permission_status": "User-authorized for private repository replication; external redistribution status unverified",
+  "evaluation_origin": "Week 3 training corpus includes user-supplied questions marked train; the separate independent final evaluation set remains sealed and is not included."
+}

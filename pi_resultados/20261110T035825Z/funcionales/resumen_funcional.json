@@ -1,0 +1,34 @@
+{
+  "prueba": "desarrollo + smoke (NO evaluación final independiente)",
+  "fecha_utc": "2026-11-10T03:58:29.912235+00:00",
+  "plataforma": "Linux-6.18.50+rpt-rpi-v8-aarch64-with-glibc2.41",
+  "python": "3.13.5",
+  "dataset_id": "utch-week3-train120-dev20-v1.0",
+  "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+  "modelo_sha256": "986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4",
+  "umbrales": {
+    "tema": 0.35,
+    "lexico": 0.25
+  },
+  "preguntas_desarrollo": 20,
+  "aciertos_top3_desarrollo": 14,
+  "top3_desarrollo_pct": 70.0,
+  "fallos_top3_desarrollo": 6,
+  "abstenciones_desarrollo": 3,
+  "fallos_tecnicos": 0,
+  "fallos_estructurales": [],
+  "observaciones_fuera_de_alcance": [
+    {
+      "id": "SMOKE-CAFETERIA",
+      "se_abstuvo": true,
+      "articulos": ""
+    },
+    {
+      "id": "SMOKE-CLIMA",
+      "se_abstuvo": true,
+      "articulos": ""
+    }
+  ],
+  "metodo": "perf_counter_ns alrededor de Retriever.search; RSS actual de /proc/self/status en Linux; sin HTTP ni arranque",
+  "advertencia": "Development is for functional checks, not a new independent headline. No retraining or calibration."
+}

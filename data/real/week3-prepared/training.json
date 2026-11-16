@@ -1,0 +1,722 @@
+[
+  {
+    "example_id": "Q9001",
+    "question": "¿A qué modelos educativos de la UTCH se aplica obligatoriamente el reglamento académico?",
+    "topic": "Alcance del reglamento",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9002",
+    "question": "¿Los estudiantes del modelo tradicional y del modelo BIS están sujetos al mismo reglamento académico?",
+    "topic": "Alcance del reglamento",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9003",
+    "question": "¿Qué modalidades de estudio de la universidad deben cumplir las disposiciones de este reglamento?",
+    "topic": "Alcance del reglamento",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9004",
+    "question": "¿Cómo se clasifica a un estudiante que tuvo una baja temporal y vuelve a inscribirse en la UTCH?",
+    "topic": "Clasificación de estudiantes",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9005",
+    "question": "Si alguien regresa a la universidad después de una baja temporal, ¿qué tipo de estudiante es?",
+    "topic": "Clasificación de estudiantes",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9006",
+    "question": "¿Qué nombre recibe el alumno que se inscribe otra vez tras haber causado baja temporal?",
+    "topic": "Clasificación de estudiantes",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9007",
+    "question": "¿Es obligatorio presentar un examen de ingreso para convertirse en estudiante de la UTCH?",
+    "topic": "Examen de ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9008",
+    "question": "¿Qué evaluación debe realizar toda persona que aspire a ingresar a la universidad?",
+    "topic": "Examen de ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9009",
+    "question": "Para solicitar el ingreso como estudiante, ¿hay que presentar el examen establecido por la UTCH?",
+    "topic": "Examen de ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9010",
+    "question": "¿Qué comprobante de estudios de bachillerato se solicita para ser admitido en la UTCH?",
+    "topic": "Documentación de admisión",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9011",
+    "question": "Para inscribirme como aspirante, ¿qué documento que acredite la preparatoria debo entregar?",
+    "topic": "Documentación de admisión",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9012",
+    "question": "¿Cuál es el documento de educación media superior requerido en los trámites de admisión?",
+    "topic": "Documentación de admisión",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9013",
+    "question": "Si cursé el bachillerato en el extranjero, ¿qué debo cumplir para que lo reconozcan al entrar a la UTCH?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9014",
+    "question": "¿Qué requisitos aplican a un aspirante que estudió la preparatoria fuera de México?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9015",
+    "question": "¿Cómo debe acreditar sus estudios y estancia legal una persona cuyo bachillerato fue realizado en otro país?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9016",
+    "question": "¿Cuántos días hábiles tiene un estudiante de nuevo ingreso para pedir un cambio de carrera?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9017",
+    "question": "Si acabo de ingresar a la UTCH, ¿en qué plazo puedo solicitar cambiarme de carrera?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9018",
+    "question": "¿Durante qué periodo inicial del cuatrimestre se permite a un alumno nuevo pedir cambio de carrera?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9019",
+    "question": "¿En qué plazo puede un estudiante solicitar un cambio de carrera y de turno?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9020",
+    "question": "Si quiero modificar tanto mi carrera como mi turno, ¿cuándo debo presentar la solicitud?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9021",
+    "question": "¿Cuánto tiempo después de iniciar el cuatrimestre tengo para pedir el cambio conjunto de carrera y turno?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9022",
+    "question": "¿Qué condiciones debe cumplir una asignatura para considerarse acreditada?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9023",
+    "question": "Para acreditar una materia, ¿basta con asistir o también hay que aprobar las evaluaciones requeridas?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9024",
+    "question": "¿Cuáles son los requisitos académicos generales para acreditar las materias del plan de estudios?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9025",
+    "question": "Además de acreditar las materias, ¿qué deben certificar los estudiantes del modelo BIS?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9026",
+    "question": "¿Qué evaluación adicional de idioma tienen que cumplir los alumnos BIS según su grado académico?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9027",
+    "question": "Si estoy en el modelo BIS, ¿qué requisito de certificación lingüística se suma a las evaluaciones normales?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9028",
+    "question": "¿En qué tipo de periodos se imparten los cursos regulares de la UTCH?",
+    "topic": "Periodos escolares",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9029",
+    "question": "¿La universidad organiza sus programas de estudios regulares por semestres o por cuatrimestres?",
+    "topic": "Periodos escolares",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9030",
+    "question": "¿Cómo está dividido el calendario de impartición de materias regulares en la UTCH?",
+    "topic": "Periodos escolares",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9031",
+    "question": "¿Puede un estudiante estar inscrito en dos carreras a la vez en la UTCH?",
+    "topic": "Inscripción simultánea",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9032",
+    "question": "¿Qué restricción existe para cursar simultáneamente dos carreras universitarias?",
+    "topic": "Inscripción simultánea",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9033",
+    "question": "¿Se permite llevar dos programas educativos al mismo tiempo y cuál es la excepción?",
+    "topic": "Inscripción simultánea",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9034",
+    "question": "¿Bajo qué condiciones puede volver un alumno que dejó de reinscribirse por uno o más periodos?",
+    "topic": "Reincorporación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9035",
+    "question": "Si pasé varios cuatrimestres sin reinscribirme, ¿qué se revisa antes de permitirme regresar?",
+    "topic": "Reincorporación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9036",
+    "question": "¿Qué debe mantenerse vigente y qué disponibilidad se necesita para reincorporarse tras dejar de inscribirse?",
+    "topic": "Reincorporación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9037",
+    "question": "¿Cuántas veces está permitido cursar el mismo cuatrimestre?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9038",
+    "question": "Si no apruebo un cuatrimestre, ¿cuál es el máximo de veces que puedo volver a cursarlo?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9039",
+    "question": "Según las reglas de reinscripción y baja temporal, ¿cuál es el límite de veces para cursar un mismo periodo?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9040",
+    "question": "¿Qué aspectos del aprendizaje considera la evaluación académica de la UTCH?",
+    "topic": "Evaluación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9041",
+    "question": "Cuando se evalúa por competencias, ¿qué se valora además de los conocimientos del estudiante?",
+    "topic": "Evaluación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9042",
+    "question": "¿Qué dimensiones del desempeño estudiantil se examinan en la evaluación académica institucional?",
+    "topic": "Evaluación académica",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9043",
+    "question": "¿Cuál es el nivel mínimo aprobatorio y su calificación numérica en la UTCH?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9044",
+    "question": "¿Qué significa la calificación SA y qué número representa como mínimo para aprobar?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9045",
+    "question": "¿Con qué calificación mínima y nivel de desempeño se acredita satisfactoriamente una evaluación?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9046",
+    "question": "¿Qué niveles de desempeño debo obtener en todas las unidades para aprobar una materia?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9047",
+    "question": "Si una asignatura tiene varias unidades, ¿qué calificaciones se aceptan para aprobarlas todas?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9048",
+    "question": "¿Cuáles son los niveles alfabéticos válidos en cada unidad para acreditar la asignatura completa?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9049",
+    "question": "¿Qué porcentaje mínimo de asistencia necesito para tener derecho a evaluación ordinaria?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9050",
+    "question": "Para presentar la evaluación ordinaria de una unidad, ¿cuánta asistencia debo acumular?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9051",
+    "question": "¿Cuál es la asistencia mínima exigida durante el periodo de una unidad para poder evaluarme ordinariamente?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9052",
+    "question": "¿Qué actividad académica se considera equivalente al servicio social en la UTCH?",
+    "topic": "Servicio social y estadía",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9053",
+    "question": "¿La estadía profesional cuenta para cumplir la obligación de servicio social?",
+    "topic": "Servicio social y estadía",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9054",
+    "question": "¿Con qué actividad realizada por el estudiante se cubre el requisito de servicio social para titularse?",
+    "topic": "Servicio social y estadía",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9055",
+    "question": "¿Tengo derecho a solicitar que revisen una evaluación de una materia?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9056",
+    "question": "Si no estoy de acuerdo con una evaluación, ¿puedo pedir su revisión según el reglamento?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9057",
+    "question": "¿Qué derecho tiene el estudiante respecto a la revisión de los resultados de sus evaluaciones?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9058",
+    "question": "¿En qué días del mes deben pagarse las cuotas y demás adeudos con la universidad?",
+    "topic": "Obligaciones de pago",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9059",
+    "question": "¿Cuál es el plazo mensual establecido para cubrir derechos y pagos pendientes en la UTCH?",
+    "topic": "Obligaciones de pago",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9060",
+    "question": "Si tengo cuotas por pagar a distintos departamentos, ¿hasta qué momento del mes debo cubrirlas?",
+    "topic": "Obligaciones de pago",
+    "provenance": "20 preguntas de pruebas.csv; user-designated training split; individual author unspecified"
+  },
+  {
+    "example_id": "Q9061",
+    "question": "¿Qué indica la abreviatura NA en el resultado de una evaluación?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9061; article 2 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Definiciones operativas y académicas"
+  },
+  {
+    "example_id": "Q9062",
+    "question": "¿La acreditación exige una calificación final aprobatoria después de cumplir las evaluaciones requeridas?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9062; article 2 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Definiciones operativas y académicas"
+  },
+  {
+    "example_id": "Q9063",
+    "question": "¿La calificación alfabética representa el nivel de desempeño del estudiante bajo el enfoque por competencias?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9063; article 2 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Definiciones operativas y académicas"
+  },
+  {
+    "example_id": "Q9064",
+    "question": "Si soy estudiante irregular y quiero empezar de nuevo en otra carrera disponible, ¿debo presentar examen de ingreso?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9064; article 5 mapped to catalog topic Examen de ingreso; source topic label: Circunstancias para presentar el examen de ingreso"
+  },
+  {
+    "example_id": "Q9065",
+    "question": "¿Un alumno regular que cambia de carrera está contemplado entre quienes presentan el examen de ingreso?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9065; article 5 mapped to catalog topic Examen de ingreso; source topic label: Circunstancias para presentar el examen de ingreso"
+  },
+  {
+    "example_id": "Q9066",
+    "question": "Si soy irregular y deseo reiniciar la carrera que ya cursaba, ¿en qué disposición se contempla mi examen de ingreso?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9066; article 5 mapped to catalog topic Examen de ingreso; source topic label: Circunstancias para presentar el examen de ingreso"
+  },
+  {
+    "example_id": "Q9067",
+    "question": "¿Quién determina el examen que deben presentar los aspirantes a la UTCH?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9067; article 4 mapped to catalog topic Examen de ingreso; source topic label: Requisito de examen de ingreso"
+  },
+  {
+    "example_id": "Q9068",
+    "question": "¿El requisito de presentar el examen de ingreso se dirige a todos los aspirantes?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9068; article 4 mapped to catalog topic Examen de ingreso; source topic label: Requisito de examen de ingreso"
+  },
+  {
+    "example_id": "Q9069",
+    "question": "¿Qué artículo establece el examen institucional como requisito para quienes aspiran a ser estudiantes?",
+    "topic": "Examen de ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9069; article 4 mapped to catalog topic Examen de ingreso; source topic label: Requisito de examen de ingreso"
+  },
+  {
+    "example_id": "Q9070",
+    "question": "¿Por cuánto tiempo puedo entregar una constancia de terminación de bachillerato en lugar del certificado legalizado?",
+    "topic": "Documentación de admisión",
+    "provenance": "User-supplied week3-questions.csv row Q9070; article 6 mapped to catalog topic Documentación de admisión; source topic label: Requisitos de documentación para admisión"
+  },
+  {
+    "example_id": "Q9071",
+    "question": "¿El certificado médico de admisión debe incluir mi tipo sanguíneo?",
+    "topic": "Documentación de admisión",
+    "provenance": "User-supplied week3-questions.csv row Q9071; article 6 mapped to catalog topic Documentación de admisión; source topic label: Requisitos de documentación para admisión"
+  },
+  {
+    "example_id": "Q9072",
+    "question": "¿Cuántas fotografías debo entregar para la admisión y de qué tamaño deben ser?",
+    "topic": "Documentación de admisión",
+    "provenance": "User-supplied week3-questions.csv row Q9072; article 6 mapped to catalog topic Documentación de admisión; source topic label: Requisitos de documentación para admisión"
+  },
+  {
+    "example_id": "Q9073",
+    "question": "¿Qué dirección se menciona para el reconocimiento en México del bachillerato realizado en el extranjero?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "User-supplied week3-questions.csv row Q9073; article 7 mapped to catalog topic Estudios en el extranjero; source topic label: Revalidación de estudios en el extranjero"
+  },
+  {
+    "example_id": "Q9074",
+    "question": "¿Además de reconocer mi bachillerato extranjero, debo acreditar mi estancia legal en México?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "User-supplied week3-questions.csv row Q9074; article 7 mapped to catalog topic Estudios en el extranjero; source topic label: Revalidación de estudios en el extranjero"
+  },
+  {
+    "example_id": "Q9075",
+    "question": "¿Las disposiciones de reconocimiento de estudios extranjeros también abarcan los estudios equivalentes al bachillerato?",
+    "topic": "Estudios en el extranjero",
+    "provenance": "User-supplied week3-questions.csv row Q9075; article 7 mapped to catalog topic Estudios en el extranjero; source topic label: Revalidación de estudios en el extranjero"
+  },
+  {
+    "example_id": "Q9076",
+    "question": "¿Ante qué dirección debe tramitar su cambio de carrera un estudiante de nuevo ingreso?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9076; article 8 mapped to catalog topic Cambio de carrera de nuevo ingreso; source topic label: Cambio de carrera para nuevo ingreso"
+  },
+  {
+    "example_id": "Q9077",
+    "question": "¿Cuántas solicitudes de cambio de carrera se permiten a un alumno de nuevo ingreso?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9077; article 8 mapped to catalog topic Cambio de carrera de nuevo ingreso; source topic label: Cambio de carrera para nuevo ingreso"
+  },
+  {
+    "example_id": "Q9078",
+    "question": "¿La falta de espacios en la carrera solicitada influye en el cambio de un estudiante de nuevo ingreso?",
+    "topic": "Cambio de carrera de nuevo ingreso",
+    "provenance": "User-supplied week3-questions.csv row Q9078; article 8 mapped to catalog topic Cambio de carrera de nuevo ingreso; source topic label: Cambio de carrera para nuevo ingreso"
+  },
+  {
+    "example_id": "Q9079",
+    "question": "¿Qué autoridad recibe las solicitudes de cambio de carrera y turno?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "User-supplied week3-questions.csv row Q9079; article 9 mapped to catalog topic Cambio de carrera y turno; source topic label: Cambio de carrera y turno"
+  },
+  {
+    "example_id": "Q9080",
+    "question": "¿La disponibilidad debe existir tanto en la carrera como en el turno al que deseo cambiarme?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "User-supplied week3-questions.csv row Q9080; article 9 mapped to catalog topic Cambio de carrera y turno; source topic label: Cambio de carrera y turno"
+  },
+  {
+    "example_id": "Q9081",
+    "question": "¿Puedo solicitar un segundo cambio de carrera y turno durante el mismo periodo inicial?",
+    "topic": "Cambio de carrera y turno",
+    "provenance": "User-supplied week3-questions.csv row Q9081; article 9 mapped to catalog topic Cambio de carrera y turno; source topic label: Cambio de carrera y turno"
+  },
+  {
+    "example_id": "Q9082",
+    "question": "¿El criterio de acreditación de asignaturas comprende todos los programas educativos impartidos por la UTCH?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "User-supplied week3-questions.csv row Q9082; article 10 mapped to catalog topic Acreditación de asignaturas; source topic label: Criterios generales de acreditación"
+  },
+  {
+    "example_id": "Q9083",
+    "question": "¿Qué artículo vincula la acreditación de una asignatura con el cumplimiento de todas las evaluaciones requeridas?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "User-supplied week3-questions.csv row Q9083; article 10 mapped to catalog topic Acreditación de asignaturas; source topic label: Criterios generales de acreditación"
+  },
+  {
+    "example_id": "Q9084",
+    "question": "¿La calificación final aprobatoria forma parte de los criterios de acreditación de las asignaturas del plan de estudios?",
+    "topic": "Acreditación de asignaturas",
+    "provenance": "User-supplied week3-questions.csv row Q9084; article 10 mapped to catalog topic Acreditación de asignaturas; source topic label: Criterios generales de acreditación"
+  },
+  {
+    "example_id": "Q9085",
+    "question": "¿Qué instrumento se utiliza para valorar el nivel de lengua inglesa requerido a los estudiantes BIS?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "User-supplied week3-questions.csv row Q9085; article 10 BIS mapped to catalog topic Certificación de inglés BIS; source topic label: Requisito de inglés para modelo BIS"
+  },
+  {
+    "example_id": "Q9086",
+    "question": "¿Qué marco de referencia se utiliza para establecer el nivel de inglés por grado en el modelo BIS?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "User-supplied week3-questions.csv row Q9086; article 10 BIS mapped to catalog topic Certificación de inglés BIS; source topic label: Requisito de inglés para modelo BIS"
+  },
+  {
+    "example_id": "Q9087",
+    "question": "¿Los estudiantes BIS también deben cumplir los criterios de acreditación establecidos en el artículo 10?",
+    "topic": "Certificación de inglés BIS",
+    "provenance": "User-supplied week3-questions.csv row Q9087; article 10 BIS mapped to catalog topic Certificación de inglés BIS; source topic label: Requisito de inglés para modelo BIS"
+  },
+  {
+    "example_id": "Q9088",
+    "question": "¿Qué calendario establece los periodos cuatrimestrales de los cursos regulares?",
+    "topic": "Periodos escolares",
+    "provenance": "User-supplied week3-questions.csv row Q9088; article 13 mapped to catalog topic Periodos escolares; source topic label: Períodos escolares cuatrimestrales"
+  },
+  {
+    "example_id": "Q9089",
+    "question": "¿Qué artículo relaciona la impartición de los cursos regulares con el calendario escolar institucional?",
+    "topic": "Periodos escolares",
+    "provenance": "User-supplied week3-questions.csv row Q9089; article 13 mapped to catalog topic Periodos escolares; source topic label: Períodos escolares cuatrimestrales"
+  },
+  {
+    "example_id": "Q9090",
+    "question": "¿La organización por cuatrimestres abarca los cursos de los planes y programas de estudios regulares?",
+    "topic": "Periodos escolares",
+    "provenance": "User-supplied week3-questions.csv row Q9090; article 13 mapped to catalog topic Periodos escolares; source topic label: Períodos escolares cuatrimestrales"
+  },
+  {
+    "example_id": "Q9091",
+    "question": "¿La combinación de ingeniería e ingeniería técnica aparece como excepción a la inscripción simultánea?",
+    "topic": "Inscripción simultánea",
+    "provenance": "User-supplied week3-questions.csv row Q9091; article 16 mapped to catalog topic Inscripción simultánea; source topic label: Restricción de inscripción simultánea"
+  },
+  {
+    "example_id": "Q9092",
+    "question": "¿Qué niveles de estudio menciona expresamente la excepción para inscribirse en dos carreras?",
+    "topic": "Inscripción simultánea",
+    "provenance": "User-supplied week3-questions.csv row Q9092; article 16 mapped to catalog topic Inscripción simultánea; source topic label: Restricción de inscripción simultánea"
+  },
+  {
+    "example_id": "Q9093",
+    "question": "¿Qué artículo puedo consultar para revisar la excepción a la prohibición de doble inscripción?",
+    "topic": "Inscripción simultánea",
+    "provenance": "User-supplied week3-questions.csv row Q9093; article 16 mapped to catalog topic Inscripción simultánea; source topic label: Restricción de inscripción simultánea"
+  },
+  {
+    "example_id": "Q9094",
+    "question": "¿Qué ocurre con la posibilidad de reincorporación si cambió el plan de estudios respecto a mi último cuatrimestre?",
+    "topic": "Reincorporación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9094; article 18 mapped to catalog topic Reincorporación académica; source topic label: Reincorporación académica"
+  },
+  {
+    "example_id": "Q9095",
+    "question": "¿Para reincorporarme se considera el cupo de mi área de especialidad además del de la carrera?",
+    "topic": "Reincorporación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9095; article 18 mapped to catalog topic Reincorporación académica; source topic label: Reincorporación académica"
+  },
+  {
+    "example_id": "Q9096",
+    "question": "¿La disposición de reincorporación contempla haber dejado de reinscribirse durante más de un periodo académico?",
+    "topic": "Reincorporación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9096; article 18 mapped to catalog topic Reincorporación académica; source topic label: Reincorporación académica"
+  },
+  {
+    "example_id": "Q9097",
+    "question": "¿Ante qué área se solicita la baja temporal del cuatrimestre?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "User-supplied week3-questions.csv row Q9097; article 19 mapped to catalog topic Baja temporal y repetición; source topic label: Baja temporal y límite de cursado"
+  },
+  {
+    "example_id": "Q9098",
+    "question": "¿Dónde puedo consultar la fecha límite para tramitar una baja temporal?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "User-supplied week3-questions.csv row Q9098; article 19 mapped to catalog topic Baja temporal y repetición; source topic label: Baja temporal y límite de cursado"
+  },
+  {
+    "example_id": "Q9099",
+    "question": "¿La solicitud de baja temporal debe ajustarse al plazo del calendario institucional?",
+    "topic": "Baja temporal y repetición",
+    "provenance": "User-supplied week3-questions.csv row Q9099; article 19 mapped to catalog topic Baja temporal y repetición; source topic label: Baja temporal y límite de cursado"
+  },
+  {
+    "example_id": "Q9100",
+    "question": "¿La evaluación académica se define como un proceso continuo o como un acto aislado?",
+    "topic": "Evaluación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9100; article 20 mapped to catalog topic Evaluación académica; source topic label: Definición de evaluación académica"
+  },
+  {
+    "example_id": "Q9101",
+    "question": "¿Con qué finalidad de acreditación se conoce el nivel de aprendizaje mediante la evaluación académica?",
+    "topic": "Evaluación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9101; article 20 mapped to catalog topic Evaluación académica; source topic label: Definición de evaluación académica"
+  },
+  {
+    "example_id": "Q9102",
+    "question": "¿Qué enfoque educativo sustenta la definición de evaluación académica de la universidad?",
+    "topic": "Evaluación académica",
+    "provenance": "User-supplied week3-questions.csv row Q9102; article 20 mapped to catalog topic Evaluación académica; source topic label: Definición de evaluación académica"
+  },
+  {
+    "example_id": "Q9103",
+    "question": "¿Qué institución establece los tipos de evaluación aplicables a sus estudiantes?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9103; article 21 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Calificación mínima aprobatoria"
+  },
+  {
+    "example_id": "Q9104",
+    "question": "¿El logro de las competencias profesionales forma parte del propósito de los tipos de evaluación?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9104; article 21 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Calificación mínima aprobatoria"
+  },
+  {
+    "example_id": "Q9105",
+    "question": "¿Un nivel de desempeño inferior a SA alcanza el mínimo aprobatorio establecido?",
+    "topic": "Calificación mínima aprobatoria",
+    "provenance": "User-supplied week3-questions.csv row Q9105; article 21 mapped to catalog topic Calificación mínima aprobatoria; source topic label: Calificación mínima aprobatoria"
+  },
+  {
+    "example_id": "Q9106",
+    "question": "¿Cómo interviene la ponderación de cada unidad en el resultado final de la asignatura?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "User-supplied week3-questions.csv row Q9106; article 30 mapped to catalog topic Requisitos para aprobar una asignatura; source topic label: Requisito de aprobación de asignatura"
+  },
+  {
+    "example_id": "Q9107",
+    "question": "¿Puedo aprobar una asignatura si una de sus unidades tiene nivel NA?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "User-supplied week3-questions.csv row Q9107; article 30 mapped to catalog topic Requisitos para aprobar una asignatura; source topic label: Requisito de aprobación de asignatura"
+  },
+  {
+    "example_id": "Q9108",
+    "question": "¿Es necesario aprobar la totalidad de las unidades aunque algunas tengan mayor ponderación?",
+    "topic": "Requisitos para aprobar una asignatura",
+    "provenance": "User-supplied week3-questions.csv row Q9108; article 30 mapped to catalog topic Requisitos para aprobar una asignatura; source topic label: Requisito de aprobación de asignatura"
+  },
+  {
+    "example_id": "Q9109",
+    "question": "¿Debo estar inscrito en la carrera durante el cuatrimestre de la evaluación ordinaria para tener derecho a presentarla?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "User-supplied week3-questions.csv row Q9109; article 33 mapped to catalog topic Derecho a evaluación ordinaria; source topic label: Requisitos para evaluación ordinaria (asistencia)"
+  },
+  {
+    "example_id": "Q9110",
+    "question": "¿Entregar las evidencias indicadas por el profesor es un requisito de la evaluación ordinaria?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "User-supplied week3-questions.csv row Q9110; article 33 mapped to catalog topic Derecho a evaluación ordinaria; source topic label: Requisitos para evaluación ordinaria (asistencia)"
+  },
+  {
+    "example_id": "Q9111",
+    "question": "¿La asistencia para la evaluación ordinaria se calcula con las horas impartidas en el periodo de cada unidad de aprendizaje?",
+    "topic": "Derecho a evaluación ordinaria",
+    "provenance": "User-supplied week3-questions.csv row Q9111; article 33 mapped to catalog topic Derecho a evaluación ordinaria; source topic label: Requisitos para evaluación ordinaria (asistencia)"
+  },
+  {
+    "example_id": "Q9112",
+    "question": "¿El servicio social que se cubre con la estadía profesional constituye un requisito de titulación?",
+    "topic": "Servicio social y estadía",
+    "provenance": "User-supplied week3-questions.csv row Q9112; article 43 mapped to catalog topic Servicio social y estadía; source topic label: Servicio social y estadía profesional"
+  },
+  {
+    "example_id": "Q9113",
+    "question": "¿Qué artículo establece la equivalencia entre el tiempo de estadía profesional y la prestación del servicio social?",
+    "topic": "Servicio social y estadía",
+    "provenance": "User-supplied week3-questions.csv row Q9113; article 43 mapped to catalog topic Servicio social y estadía; source topic label: Servicio social y estadía profesional"
+  },
+  {
+    "example_id": "Q9114",
+    "question": "¿La equivalencia con el servicio social se refiere al tiempo dedicado a desarrollar la estadía profesional?",
+    "topic": "Servicio social y estadía",
+    "provenance": "User-supplied week3-questions.csv row Q9114; article 43 mapped to catalog topic Servicio social y estadía; source topic label: Servicio social y estadía profesional"
+  },
+  {
+    "example_id": "Q9115",
+    "question": "¿Tengo derecho a recibir asesoría y apoyo del personal docente?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "User-supplied week3-questions.csv row Q9115; article 47 mapped to catalog topic Derecho a revisión de evaluaciones; source topic label: Derechos de los estudiantes"
+  },
+  {
+    "example_id": "Q9116",
+    "question": "¿Por qué sistema tengo derecho a recibir la calificación de cada evaluación?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "User-supplied week3-questions.csv row Q9116; article 47 mapped to catalog topic Derecho a revisión de evaluaciones; source topic label: Derechos de los estudiantes"
+  },
+  {
+    "example_id": "Q9117",
+    "question": "¿Puedo darme de alta en el seguro facultativo del IMSS como parte de mis derechos estudiantiles?",
+    "topic": "Derecho a revisión de evaluaciones",
+    "provenance": "User-supplied week3-questions.csv row Q9117; article 47 mapped to catalog topic Derecho a revisión de evaluaciones; source topic label: Derechos de los estudiantes"
+  },
+  {
+    "example_id": "Q9118",
+    "question": "¿Debo hacerme responsable de los desperfectos que cause en la universidad?",
+    "topic": "Obligaciones de pago",
+    "provenance": "User-supplied week3-questions.csv row Q9118; article 48 mapped to catalog topic Obligaciones de pago; source topic label: Obligaciones de los estudiantes"
+  },
+  {
+    "example_id": "Q9119",
+    "question": "¿El reglamento me obliga a recabar una constancia de no adeudo?",
+    "topic": "Obligaciones de pago",
+    "provenance": "User-supplied week3-questions.csv row Q9119; article 48 mapped to catalog topic Obligaciones de pago; source topic label: Obligaciones de los estudiantes"
+  },
+  {
+    "example_id": "Q9120",
+    "question": "¿Participar en los programas de salud forma parte de las obligaciones de los estudiantes?",
+    "topic": "Obligaciones de pago",
+    "provenance": "User-supplied week3-questions.csv row Q9120; article 48 mapped to catalog topic Obligaciones de pago; source topic label: Obligaciones de los estudiantes"
+  }
+]

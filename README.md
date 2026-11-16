@@ -2,14 +2,16 @@
 
 University Nano-AI track #5, Regulation Finder. A lightweight offline application retrieves up to three articles with their identifiers and **exact original text**. It does not generate answers. Informational only; not an official university source.
 
-This repository is preparation, not the completed assignment. Everything under `data/synthetic/` is **invented synthetic demo data**, not UTCH regulation. No permission, school articles, external questions, student contributions, or Pi results are implied.
+This repository is preparation, not the completed assignment. Everything under `data/synthetic/` is **invented synthetic demo data**, not UTCH regulation. The real Week 2 training and development files in `data/real/` were supplied for this project; permission for school or public redistribution has not been confirmed. External evaluation questions, student contributions, and Pi results are not implied.
 
 ## Setup and synthetic demo
 
-Target Python 3.10+ on Linux, including Raspberry Pi with compatible wheels; actual Pi compatibility is pending. Development was verified on Python 3.12.3. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (resolution tooling used: 0.12.5), then from the repository root:
+Target Python 3.10+ on Linux, including Raspberry Pi with compatible wheels; actual Pi compatibility is pending. Development was verified on Python 3.12.3. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (resolution tooling used: 0.12.5) and Node.js/npm (to build the local React UI served by Flask), then from the repository root:
 
 ```sh
 uv sync --frozen
+npm --prefix frontend ci
+npm --prefix frontend run build
 uv run --frozen regulation-finder validate
 uv run --frozen regulation-finder train
 uv run --frozen regulation-finder search 'library books return receipt'
@@ -20,6 +22,7 @@ Open http://127.0.0.1:5000. Stop with Ctrl-C. All application assets are local; 
 
 ```sh
 uv run --frozen regulation-finder evaluate --split development
+uv run --frozen regulation-finder calibrate --steps 11
 uv run --frozen regulation-finder evaluate
 uv run --frozen regulation-finder measure --iterations 100 --hardware-label 'local development host; not Raspberry Pi'
 uv run --frozen ruff check .
@@ -35,20 +38,65 @@ Global options precede the subcommand:
 uv run --frozen regulation-finder --data data/synthetic --model artifacts/synthetic-model.json --min-topic-probability 0.55 --min-lexical-score 0.15 search 'laboratory goggles'
 ```
 
-Missing or stale artifacts require `train`; invalid datasets exit with a clear error. Empty questions request input. Unseen vocabulary, failed probability gates or no useful lexical overlap produce `I don't find this in the regulation`. At most three articles from the predicted topic appear; fewer candidates yield fewer results without crossing topics. Threshold defaults are arbitrary demo values, **not calibrated confidence estimates**. Choose real settings only on development data.
+Missing or stale artifacts require `train`; invalid datasets exit with a clear error. Empty questions request input. Unseen vocabulary, failed probability gates or no useful lexical overlap produce `I don't find this in the regulation`. At most three articles from the predicted topic appear; fewer candidates yield fewer results without crossing topics. Synthetic-demo commands can pass explicit thresholds; the real Week 2 defaults below are the selected settings from the documented development-only calibration. `calibrate` reports a threshold grid but does not select a setting or read the out-of-scope/final evaluation splits.
+
+The current real-data Week 2 run is organized under `data/real/train/`, `data/real/dev/` and `data/real/prepared/`; the saved model and calibration outputs are under `artifacts/training/`. `.gitignore` allows these files to be added for repository-level reproducibility; push the local commit before another device can retrieve them. School permission and external redistribution terms remain pending; do not publish the repository outside its authorized audience. The separate final evaluation file is not included.
+
+Reproduce the Week 2 model and development-only calibration with:
+
+```sh
+uv sync --frozen
+uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json validate
+uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json train
+uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json calibrate --steps 21 > artifacts/training/development-calibration-grid.json
+uv run --frozen regulation-finder --data data/real/prepared --model artifacts/training/real-model.json evaluate --split development > artifacts/training/development-evaluation.json
+```
+
+The selected thresholds (`0.25` topic probability and `0.25` lexical coverage) are recorded in `artifacts/training/selected-settings.json` and used by default. On the 20 development examples, this setting retrieves a correct article in the top three for 14 queries; 4 answerable queries abstain. The grid and evaluation reports are reproducible with the commands above. No out-of-scope development examples were available to measure false returns, and the final evaluation set remains separate and unused.
+
+The Week 3 release adds the user-supplied 60 questions marked `train` to the original 60, mapping each question to the prepared catalog topic for its article number. Its dataset is `data/real/week3-prepared/`, and the frozen model is `artifacts/training/week3-real-model.json`. The Week 3 configuration uses topic probability `0.35` and lexical coverage `0.25`; pass both values explicitly when searching or evaluating with this model. Reproduction commands and development results are in [the Week 3 model release record](docs/week-3-model-release.md). These questions are training data, not an independent test set.
+
+## Submission-ready release and live demo launch (Week 4)
+
+To reproduce the evaluated Week 3 model release and launch the live demo on any team member's machine (after `uv sync --frozen` and `npm --prefix frontend ci && npm --prefix frontend run build` above):
+
+```sh
+sha256sum artifacts/training/week3-real-model.json
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json validate
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json --min-topic-probability 0.35 --min-lexical-score 0.25 search '¿Cuál es la calificación mínima aprobatoria?'
+uv run --frozen regulation-finder --data data/real/week3-prepared --model artifacts/training/week3-real-model.json --min-topic-probability 0.35 --min-lexical-score 0.25 web
+```
+
+- Frozen evaluated model: `artifacts/training/week3-real-model.json` (SHA-256 `986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4`)
+- Dataset: `data/real/week3-prepared` (`utch-week3-train120-dev20-v1.0`, fingerprint `80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed`)
+- Selected settings: `artifacts/training/week3-selected-settings.json` (`min_topic_probability = 0.35`, `min_lexical_score = 0.25`)
+- Training/calibration manifest: `artifacts/training/week3-training-manifest.json`
+- Independent evaluation record: `artifacts/training/week3-independent-evaluation.json` (32/60 top-three hits, 53.3%)
+- Model review & presentation segment: [Week 4 model presentation](docs/week-4-model-presentation.md)
+
+The legacy flat query/article-pair adapter can still be used with:
+
+```sh
+uv run --frozen python scripts/prepare_pair_dataset.py \
+  --pairs /path/to/dataset_v1.0_train_dev.json \
+  --articles /path/to/reglas_reglamento_utch.json \
+  --output data/real
+```
+
+The adapter preserves the `train`/`dev` assignments, allows multiple queries to reference one article, and refuses to write output when an article topic has no training example. School permission remains pending.
 
 ## Assignment checklist and pending inputs
 
 - Classifier: direct multinomial Naive Bayes, trained from scratch; no pretrained models, embeddings, LLMs or external AI APIs. No autocomplete.
-- One row per article, original text retained: schema and synthetic fixtures ready; authorized regulation and real labels **pending Karen**.
+- One row per article, original text retained: 22 articles are included in the Week 2 prepared dataset; confirm institutional permission and provenance before redistribution.
 - School permission confirmed with instructor, source/provenance and redistribution terms: **pending Karen/instructor**. Software license is also a team decision; no license selected.
-- Training/development data and reviewed topics: **pending Karen/Zaid**.
-- At least 60 independent questions from another team, frozen test and measured top-three evaluation: **pending Emanuel**. Fixtures do not satisfy this requirement.
+- Training/development runs: Week 2 used 60 training questions; Week 3 combines those with 60 additional training questions. Both use 20 development pairs; the final evaluation set remains separate and unused.
+- User-designated 60-question evaluation returned 32/60 top-three hits (53.3%) with the frozen Week 3 model. The CSV does not identify the authoring team, so that provenance remains unconfirmed; no out-of-scope questions were included.
 - Actual Raspberry Pi model, OS, installation, latency and memory measurements: **pending Betsy**.
 - Live demo, dataset, code and two-page technical report: templates and procedures ready; final deliverables **pending**.
 - Everyone codes, presents and maintains short weekly logs: blank templates provided; actual contributions/presentation evidence **pending**.
 - Instructor deadline and calendar dates: **pending**. Plan covers four relative weeks, not the assignment's original seven weeks.
 
-Read [data contracts](data/README.md), [architecture](docs/architecture.md), [four-week plan](docs/project-plan.md), [evaluation](docs/evaluation.md), [Pi procedure](docs/raspberry-pi.md) and [report outline](docs/report-template.md).
+Read [data contracts](data/README.md), [architecture](docs/architecture.md), [four-week plan](docs/project-plan.md), [evaluation](docs/evaluation.md), [Week 3 model release](docs/week-3-model-release.md), [Pi procedure](docs/raspberry-pi.md) and [report outline](docs/report-template.md).
 
 The team supplied the [Trello AI board](https://trello.com/b/bNahlyvm/ai). It was not accessed or modified during initialization. Git work is local only; do not push, deploy or change remotes without new authorization. GitHub workflow is supplied but remote execution remains pending while commits stay local.

@@ -1,0 +1,162 @@
+[
+  {
+    "question_id": "UTCH-ART-001",
+    "question": "¿Qué significan las letras SA, DE o AU en mis calificaciones de la plataforma?",
+    "accepted_article_ids": [
+      "2"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-002",
+    "question": "¿En qué casos o situaciones un alumno debe volver a presentar el examen de admisión?",
+    "accepted_article_ids": [
+      "5"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-003",
+    "question": "¿Es obligatorio presentar el examen de admisión para entrar a estudiar a la UTCH?",
+    "accepted_article_ids": [
+      "4"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-004",
+    "question": "¿Qué documentos originales y copias necesito entregar en servicios escolares para inscribirme?",
+    "accepted_article_ids": [
+      "6"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-005",
+    "question": "¿Si cursé la preparatoria fuera de México, cómo hago para revalidar mis estudios de bachillerato?",
+    "accepted_article_ids": [
+      "7"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-006",
+    "question": "Soy estudiante de primer cuatrimestre y no me gustó mi carrera, ¿cuántos días tengo para cambiarme?",
+    "accepted_article_ids": [
+      "8"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-007",
+    "question": "¿Puedo solicitar cambiarme de turno o de carrera y cuál es la fecha límite para hacer el trámite?",
+    "accepted_article_ids": [
+      "9"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-008",
+    "question": "¿Cuáles son las condiciones obligatorias para acreditar una materia en el plan de estudios?",
+    "accepted_article_ids": [
+      "10"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-009",
+    "question": "¿Qué nivel de certificación de inglés según el marco europeo me piden para avanzar de grado en el modelo bilingüe?",
+    "accepted_article_ids": [
+      "10 BIS"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-010",
+    "question": "¿Cómo se organizan los períodos escolares de clases en la UTCH?",
+    "accepted_article_ids": [
+      "13"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-011",
+    "question": "¿Puedo estar inscrito en dos carreras universitarias al mismo tiempo?",
+    "accepted_article_ids": [
+      "16"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-012",
+    "question": "Dejé de estudiar un cuatrimestre por cuestiones personales, ¿puedo regresar a la universidad y qué necesito?",
+    "accepted_article_ids": [
+      "18"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-013",
+    "question": "¿Cuántas veces máximo puedo cursar un mismo cuatrimestre y cómo pido mi baja temporal?",
+    "accepted_article_ids": [
+      "19"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-014",
+    "question": "¿Cómo funciona el modelo de evaluación de aprendizajes por competencias profesionales en la UTCH?",
+    "accepted_article_ids": [
+      "20"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-015",
+    "question": "¿Con qué calificación o porcentaje mínimo se aprueba un nivel de desempeño en la materia?",
+    "accepted_article_ids": [
+      "21"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-016",
+    "question": "¿Qué nota necesito en las unidades temáticas para dar por acreditada toda la materia?",
+    "accepted_article_ids": [
+      "30"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-017",
+    "question": "¿Qué porcentaje de asistencias a clase me piden para tener derecho a examen ordinario?",
+    "accepted_article_ids": [
+      "33"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-018",
+    "question": "¿La estadía profesional en la empresa libera de forma automática mi servicio social?",
+    "accepted_article_ids": [
+      "43"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-019",
+    "question": "¿Cuáles son los derechos principales que tengo como estudiante inscrito en la UTCH?",
+    "accepted_article_ids": [
+      "47"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  },
+  {
+    "question_id": "UTCH-ART-020",
+    "question": "¿Qué normas de conducta, vestimenta y pagos debo cumplir obligatoriamente como alumno?",
+    "accepted_article_ids": [
+      "48"
+    ],
+    "provenance": "User-provided dataset_v1.0_train_dev.json; all records designated development by user; individual author unspecified"
+  }
+]

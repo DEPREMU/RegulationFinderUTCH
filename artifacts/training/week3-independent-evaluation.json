@@ -1,0 +1,723 @@
+{
+  "evaluation_type": "user-designated independent evaluation",
+  "source_file": "data/real/week3-independent-questions.csv",
+  "source_sha256": "1fc21e1062b82c64f2bcd00046d7ddf81172e050a2f1c1943040d938a9f01252",
+  "source_authorship_provenance": "The user designated this as independent. The CSV does not identify the authoring team.",
+  "dataset_id": "utch-week3-train120-dev20-v1.0",
+  "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+  "development_file_sha256": "167f6d237c26181530a7215775e8a51192669ef98d54b6f7ad2de53b6839b4e5",
+  "model_file": "artifacts/training/week3-real-model.json",
+  "model_sha256": "986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4",
+  "settings_file": "artifacts/training/week3-selected-settings.json",
+  "settings_sha256": "40812e4725ed89a7e5d63dc12403c3c1cdfe2c29e42ae6ac2ddebc2eccd2e6cf",
+  "freeze_manifest": "artifacts/training/week3-independent-evaluation-freeze.json",
+  "freeze_manifest_sha256": "9857655e999a73b20dcd33a89de4aff7f46a2e7be39e64757c032d49f130cd35",
+  "evaluation_runner_sha256": "2bb82dc95d480fd58c234469fcfb5e6cdb897db37f4e106600367806826901b0",
+  "settings": {
+    "min_topic_probability": 0.35,
+    "min_lexical_score": 0.25
+  },
+  "headline_definition": "Top-three hits divided by all answerable questions; abstentions are misses.",
+  "independent_evaluation_used_for_tuning": false,
+  "eligible_questions": 60,
+  "top_three_hits": 32,
+  "top_three_hit_rate": 0.5333333333333333,
+  "answerable_abstentions": 19,
+  "answerable_abstention_rate": 0.31666666666666665,
+  "out_of_scope_questions": 0,
+  "out_of_scope_abstentions": 0,
+  "out_of_scope_abstention_rate": null,
+  "details": [
+    {
+      "question_id": "Q9121",
+      "question": "¿A qué nivel de desempeño corresponde la palabra autónomo?",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "2",
+        "21"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9122",
+      "question": "¿Qué letra se utiliza para registrar un desempeño destacado?",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9123",
+      "question": "¿Qué diferencia de significado hay entre NA y AU en la escala alfabética?",
+      "accepted_article_ids": [
+        "2"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "5"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9124",
+      "question": "Soy irregular y quiero retomar mis estudios desde el inicio, ¿el examen de ingreso aplica aunque antes ya haya estudiado en la UTCH?",
+      "accepted_article_ids": [
+        "5"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "5"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9125",
+      "question": "Si actualmente soy regular, ¿cambiar de programa educativo es una circunstancia prevista para presentar examen de ingreso?",
+      "accepted_article_ids": [
+        "5"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "5",
+        "4"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9126",
+      "question": "¿La CURP se entrega en copia como parte de la documentación de admisión?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9127",
+      "question": "¿Se pide copia del acta de nacimiento para ingresar a un programa educativo?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9128",
+      "question": "¿La solicitud de ingreso figura entre los documentos de admisión?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "4",
+        "5"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9129",
+      "question": "¿Las fotografías para ingresar deben tomarse de frente?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9130",
+      "question": "¿Puedo presentar una constancia de terminación de estudios mientras consigo el certificado de bachillerato legalizado?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "6"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9131",
+      "question": "¿El certificado de educación media superior que se entrega en original debe estar legalizado?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "6"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9132",
+      "question": "¿La documentación de admisión incluye tanto una solicitud de ingreso como un certificado médico?",
+      "accepted_article_ids": [
+        "6"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9133",
+      "question": "Terminé un equivalente al bachillerato en otro país, ¿el reglamento contempla que se reconozca en México?",
+      "accepted_article_ids": [
+        "7"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "7"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9134",
+      "question": "¿El reconocimiento de mi bachillerato extranjero debe cumplir los requisitos legales correspondientes?",
+      "accepted_article_ids": [
+        "7"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "7"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9135",
+      "question": "Soy de nuevo ingreso y aún estoy dentro de los diez días hábiles iniciales, ¿el cupo de la carrera que quiero sigue siendo un criterio para el cambio?",
+      "accepted_article_ids": [
+        "8"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "5",
+        "4"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9136",
+      "question": "¿El plazo para que un alumno nuevo cambie de carrera empieza al inicio del cuatrimestre?",
+      "accepted_article_ids": [
+        "8"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "8"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9137",
+      "question": "¿Un cambio de carrera y turno solicitado a tiempo puede depender de los espacios disponibles?",
+      "accepted_article_ids": [
+        "9"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "9"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9138",
+      "question": "¿Los diez días previstos para solicitar cambio de carrera y turno se cuentan como días hábiles?",
+      "accepted_article_ids": [
+        "9"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "9"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9139",
+      "question": "¿Una materia incluida en el plan de estudios requiere calificación final aprobatoria para acreditarse?",
+      "accepted_article_ids": [
+        "10"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "10"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9140",
+      "question": "¿El nivel de inglés exigido en BIS está relacionado con el grado que cursa el estudiante?",
+      "accepted_article_ids": [
+        "10 BIS"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9141",
+      "question": "¿El cumplimiento de las evaluaciones de inglés en BIS debe ser satisfactorio?",
+      "accepted_article_ids": [
+        "10 BIS"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9142",
+      "question": "¿La duración de los periodos de los cursos regulares se establece conforme al calendario propio de la institución?",
+      "accepted_article_ids": [
+        "13"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "13"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9143",
+      "question": "Quiero cursar ingeniería e ingeniería técnica a la vez, ¿qué excepción del reglamento debo revisar?",
+      "accepted_article_ids": [
+        "16"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "16"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9144",
+      "question": "Si no cambió mi plan de estudios, pero no hay espacios en mi especialidad, ¿cumplo todas las condiciones para reincorporarme?",
+      "accepted_article_ids": [
+        "18"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "18"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9145",
+      "question": "¿El plan de estudios que se considera para mi regreso se compara con el del último cuatrimestre que cursé?",
+      "accepted_article_ids": [
+        "18"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "18"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9146",
+      "question": "¿La baja temporal que permite solicitar el reglamento corresponde al cuatrimestre?",
+      "accepted_article_ids": [
+        "19"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "19"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9147",
+      "question": "¿El calendario institucional fija un límite para pedir la baja temporal ante Servicios Escolares?",
+      "accepted_article_ids": [
+        "19"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "19"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9148",
+      "question": "¿La evaluación académica permite conocer el nivel de aprendizaje alcanzado por el alumnado?",
+      "accepted_article_ids": [
+        "20"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "21",
+        "2"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9149",
+      "question": "¿El reglamento caracteriza la evaluación académica como sistemática e integral?",
+      "accepted_article_ids": [
+        "20"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "20"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9150",
+      "question": "¿La abreviatura SA se vincula con un desempeño satisfactorio de 8.0?",
+      "accepted_article_ids": [
+        "21"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "21",
+        "2"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9151",
+      "question": "¿Los tipos de evaluación que establece la UTCH tienen como propósito el aprendizaje del estudiante?",
+      "accepted_article_ids": [
+        "21"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "21",
+        "2"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9152",
+      "question": "Tengo AU en algunas unidades y NA en otra, ¿cumplo el requisito para aprobar la materia completa?",
+      "accepted_article_ids": [
+        "30"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "30"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9153",
+      "question": "¿La nota final se obtiene considerando la ponderación asignada a las unidades?",
+      "accepted_article_ids": [
+        "30"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "30"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9154",
+      "question": "Si entregué las evidencias pero solo tengo 80% de asistencia en la unidad, ¿reúno los requisitos para la evaluación ordinaria?",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9155",
+      "question": "¿Tener 90% de asistencia basta para evaluación ordinaria si no entregué las evidencias del profesor?",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9156",
+      "question": "¿Los requisitos de inscripción, evidencias y asistencia deben cumplirse para acceder a la evaluación ordinaria?",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9157",
+      "question": "Si se impartieron 40 horas de clase en una unidad, ¿34 asistencias cumplen el porcentaje mínimo para evaluación ordinaria?",
+      "accepted_article_ids": [
+        "33"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "33"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9158",
+      "question": "¿La disposición sobre estadía profesional vincula el servicio social con la obtención del título?",
+      "accepted_article_ids": [
+        "43"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "43"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9159",
+      "question": "¿Puedo recibir formación acorde con los perfiles y programas vigentes de la carrera en la que me inscribí?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9160",
+      "question": "¿Tengo derecho a realizar prácticas en talleres y laboratorios según mi formación?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9161",
+      "question": "¿Las prácticas en empresas están incluidas entre los derechos del alumnado?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "48"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9162",
+      "question": "¿Las autoridades universitarias deben darme un trato respetuoso?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9163",
+      "question": "¿El derecho a un trato respetuoso también comprende al personal administrativo?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9164",
+      "question": "¿Recibir el título de Técnico Superior Universitario aparece entre los derechos estudiantiles?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9165",
+      "question": "¿El reglamento incluye el título de Licenciatura entre los derechos de los estudiantes?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "10 BIS"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9166",
+      "question": "¿Obtener una mención honorífica figura en la lista de derechos del alumnado?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9167",
+      "question": "¿El diploma de especialidad se menciona entre los documentos que el estudiante tiene derecho a recibir?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "5",
+        "4"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9168",
+      "question": "¿El apoyo que puedo solicitar a mis docentes está reconocido como un derecho estudiantil?",
+      "accepted_article_ids": [
+        "47"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "47"
+      ],
+      "hit": true
+    },
+    {
+      "question_id": "Q9169",
+      "question": "¿Debo cursar y aprobar todas las asignaturas curriculares de mi programa?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9170",
+      "question": "¿La puntualidad en la asistencia a clases forma parte de mis obligaciones?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9171",
+      "question": "¿Tengo la obligación de acatar las órdenes de las autoridades universitarias?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9172",
+      "question": "¿Debo mantener una conducta correcta durante mi estancia universitaria?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9173",
+      "question": "¿Atender las comisiones y encomiendas asignadas figura entre mis deberes?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9174",
+      "question": "¿Es obligatorio cumplir los requisitos de titulación señalados para mis estudios?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "10"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9175",
+      "question": "¿Debo respetar los reglamentos particulares de talleres y laboratorios?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9176",
+      "question": "¿Participar en actividades institucionales es una obligación estudiantil?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9177",
+      "question": "¿Conocer y cumplir la normatividad interna está incluido entre mis deberes?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9178",
+      "question": "¿El reglamento me exige practicar los valores institucionales?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [],
+      "hit": false
+    },
+    {
+      "question_id": "Q9179",
+      "question": "¿El pago oportuno de las cuotas vigentes se considera una obligación del estudiante?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "2",
+        "21"
+      ],
+      "hit": false
+    },
+    {
+      "question_id": "Q9180",
+      "question": "¿La obligación de cubrir puntualmente los pagos incluye tanto cuotas como derechos?",
+      "accepted_article_ids": [
+        "48"
+      ],
+      "provenance": "User-designated independent set: week3-independent-questions.csv",
+      "displayed_article_ids": [
+        "48"
+      ],
+      "hit": true
+    }
+  ]
+}

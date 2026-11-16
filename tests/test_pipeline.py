@@ -138,16 +138,24 @@ def test_web_notices_search_empty_fallback_and_escaping(dataset, retriever):
     client = create_app(retriever).test_client()
     response = client.get("/")
     assert response.status_code == 200
-    assert b"Informational only" in response.data
-    assert b"SYNTHETIC DEMO DATA" in response.data
-    result = client.post("/", data={"question": "library books return receipt"})
-    assert b"Article SYN-L2" in result.data
-    assert b"desk.\nKeep the receipt." in result.data
-    assert b"Enter a question" in client.post("/", data={"question": ""}).data
-    assert b"I don&#39;t find" in client.post("/", data={"question": "spaceship"}).data
-    altered = replace(
-        dataset, articles=[Article("X", "library <script>bad()</script>", "library", "synthetic")]
-    )
+    assert b'<div id="root"></div>' in response.data
+
+    assert client.post("/api/search", json="not-a-dict").status_code == 400
+    assert client.post("/api/search", json={"question": "   "}).status_code == 400
+
+    result = client.post("/api/search", json={"question": "library books return receipt"})
+    assert result.status_code == 200
+    payload = result.get_json()
+    assert payload["status"] == "ok"
+    assert payload["suggestion"] == ""
+    assert payload["articles"][0]["article_id"] == "SYN-L2"
+    assert payload["articles"][0]["text"].endswith("desk.\nKeep the receipt.")
+
+    low_match = client.post("/api/search", json={"question": "spaceship"})
+    assert low_match.status_code == 200
+    assert low_match.get_json() == {"status": "low_match", "suggestion": FALLBACK, "articles": []}
+
+    altered = replace(dataset, articles=[Article("X", "unrelated text", "library", "synthetic")])
 
     class FixedModel:
         labels = ["library"]
@@ -155,8 +163,10 @@ def test_web_notices_search_empty_fallback_and_escaping(dataset, retriever):
         def predict(self, question):
             return "library", 1.0
 
-    safe_client = create_app(Retriever(altered, FixedModel())).test_client()
-    assert b"&lt;script&gt;" in safe_client.post("/", data={"question": "library"}).data
+    empty_client = create_app(Retriever(altered, FixedModel())).test_client()
+    empty_res = empty_client.post("/api/search", json={"question": "library"})
+    assert empty_res.status_code == 200
+    assert empty_res.get_json() == {"status": "empty", "suggestion": "", "articles": []}
 
 
 def test_cli_end_to_end_and_missing_artifact(data_path, tmp_path, capsys):

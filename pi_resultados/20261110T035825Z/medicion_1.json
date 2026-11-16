@@ -1,0 +1,24 @@
+{
+  "dataset_id": "utch-week3-train120-dev20-v1.0",
+  "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+  "synthetic": false,
+  "notice": "Informational only. This application is not an official university source.",
+  "settings": {
+    "min_topic_probability": 0.35,
+    "min_lexical_score": 0.25
+  },
+  "measured_at_utc": "2026-11-10T03:58:30.816185+00:00",
+  "hardware_label": "Raspberry Pi 4 Model B Rev 1.1",
+  "platform": "Linux-6.18.50+rpt-rpi-v8-aarch64-with-glibc2.41",
+  "machine": "aarch64",
+  "processor": "not reported by OS",
+  "python": "3.13.5",
+  "numpy": "2.5.4",
+  "model_sha256": "986ea56a5ebac58f1da7857e4e38c27d7be73c9ab0b555955b55dbefcb261ae4",
+  "iterations": 100,
+  "question_count": 20,
+  "median_ms": 0.2322,
+  "p95_ms": 0.26552604999999996,
+  "peak_process_rss_bytes": 47345664,
+  "procedure": "One warmup per question; cyclic sequential search calls, no HTTP/I/O. RSS is process lifetime high-water mark including imports, loading, and warmup. Unix resource units: bytes on macOS, KiB on Linux. Hardware label is operator supplied."
+}

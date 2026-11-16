@@ -1,0 +1,17 @@
+{
+  "dataset_id": "utch-week2-train60-dev20-v1.1",
+  "dataset_fingerprint": "15377631d6b485455d6b0567dd95cee36ec9ad843a217c73d4daa4cb2f02821a",
+  "calibration_split": "development",
+  "development_examples": 20,
+  "grid_steps_per_threshold": 21,
+  "selection_objective": "Maximize development top-three hits; among tied settings, choose the highest combined thresholds, then the higher topic threshold and lexical threshold.",
+  "min_topic_probability": 0.25,
+  "min_lexical_score": 0.25,
+  "top_three_hits": 14,
+  "top_three_hit_rate": 0.7,
+  "answerable_abstentions": 4,
+  "answerable_abstention_rate": 0.2,
+  "selection_is_development_only": true,
+  "final_evaluation_used": false,
+  "limitation": "No out-of-scope examples were available for calibration; final evaluation remains sealed."
+}

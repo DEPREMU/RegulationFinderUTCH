@@ -1,0 +1,38 @@
+{
+  "run_date": "2026-10-30",
+  "dataset_id": "utch-week2-train60-dev20-v1.1",
+  "dataset_fingerprint": "15377631d6b485455d6b0567dd95cee36ec9ad843a217c73d4daa4cb2f02821a",
+  "training_examples": 60,
+  "development_examples": 20,
+  "article_count": 22,
+  "topic_count": 20,
+  "vocabulary_size": 312,
+  "algorithm": "Multinomial Naive Bayes from scratch",
+  "laplace_alpha": 1.0,
+  "random_seed": null,
+  "random_seed_note": "Not applicable: training is deterministic and uses no random sampling.",
+  "loss_history": null,
+  "loss_history_note": "Not applicable: parameters are computed in closed form; there is no iterative optimizer.",
+  "model_artifact": "artifacts/training/real-model.json",
+  "model_sha256": "79e62ddd6f22f8f8021a44d542c680bc481d0d199ca584dacbf32f8e335e07f5",
+  "calibration": {
+    "split": "development",
+    "grid_steps_per_threshold": 21,
+    "grid_artifact": "artifacts/training/development-calibration-grid.json",
+    "selection_objective": "Maximize development top-three hits; among tied settings, choose the highest combined thresholds, then the higher topic threshold and lexical threshold.",
+    "selected_min_topic_probability": 0.25,
+    "selected_min_lexical_score": 0.25,
+    "top_three_hits": 14,
+    "top_three_hit_rate": 0.7,
+    "answerable_abstentions": 4,
+    "answerable_abstention_rate": 0.2,
+    "selected_settings_artifact": "artifacts/training/selected-settings.json",
+    "final_evaluation_used": false,
+    "out_of_scope_examples_used": 0,
+    "limitation": "No out-of-scope development examples were available to estimate false returns."
+  },
+  "runtime": {
+    "python": "3.12.3",
+    "numpy": "2.5.4"
+  }
+}
