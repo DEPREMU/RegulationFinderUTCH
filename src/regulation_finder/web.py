@@ -9,12 +9,13 @@ from .config import FALLBACK
 FRONTEND_DIST = Path(__file__).resolve().parents[2] / "frontend" / "dist"
 
 
-def create_app(retriever):
+def create_app(retriever, frontend_dist: Path | None = None):
+    dist_dir = Path(frontend_dist) if frontend_dist is not None else FRONTEND_DIST
     app = Flask(
         __name__,
-        static_folder=str(FRONTEND_DIST / "assets"),
+        static_folder=str(dist_dir / "assets"),
         static_url_path="/assets",
-        template_folder=str(FRONTEND_DIST),
+        template_folder=str(dist_dir),
     )
     app.config["MAX_CONTENT_LENGTH"] = 16384
 
@@ -24,7 +25,7 @@ def create_app(retriever):
 
     @app.route("/favicon.svg", methods=["GET"])
     def favicon():
-        return send_from_directory(FRONTEND_DIST, "favicon.svg")
+        return send_from_directory(dist_dir, "favicon.svg")
 
     @app.route("/api/search", methods=["POST"])
     def api_search():

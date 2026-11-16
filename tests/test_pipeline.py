@@ -134,8 +134,13 @@ def test_validation_rejects_bad_data(data_path, tmp_path, mutation):
         load_dataset(directory)
 
 
-def test_web_notices_search_empty_fallback_and_escaping(dataset, retriever):
-    client = create_app(retriever).test_client()
+def test_web_notices_search_empty_fallback_and_escaping(dataset, retriever, tmp_path):
+    dist_dir = tmp_path / "dist"
+    dist_dir.mkdir()
+    (dist_dir / "index.html").write_text(
+        '<!doctype html><html><body><div id="root"></div></body></html>'
+    )
+    client = create_app(retriever, frontend_dist=dist_dir).test_client()
     response = client.get("/")
     assert response.status_code == 200
     assert b'<div id="root"></div>' in response.data
@@ -163,7 +168,9 @@ def test_web_notices_search_empty_fallback_and_escaping(dataset, retriever):
         def predict(self, question):
             return "library", 1.0
 
-    empty_client = create_app(Retriever(altered, FixedModel())).test_client()
+    empty_client = create_app(
+        Retriever(altered, FixedModel()), frontend_dist=dist_dir
+    ).test_client()
     empty_res = empty_client.post("/api/search", json={"question": "library"})
     assert empty_res.status_code == 200
     assert empty_res.get_json() == {"status": "empty", "suggestion": "", "articles": []}
