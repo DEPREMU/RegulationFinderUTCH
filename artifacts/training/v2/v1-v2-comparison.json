@@ -1,0 +1,109 @@
+{
+  "primary_comparison": "Same 708 grouped article+intention holdout questions for V1 and V2",
+  "semantic_separation": {
+    "known_historical_training_overlaps_excluded_from_v2": 52,
+    "confirmed_exclusions": 47,
+    "review_pending_exclusions": 5,
+    "complete_human_adjudication_claimed": false
+  },
+  "v1": {
+    "eligible_questions": 708,
+    "top_one_hits": 319,
+    "top_one_hit_rate": 0.4505649717514124,
+    "top_three_hits": 330,
+    "top_three_hit_rate": 0.4661016949152542,
+    "answerable_abstentions": 264,
+    "answerable_abstention_rate": 0.3728813559322034,
+    "out_of_scope_questions": 30,
+    "out_of_scope_abstentions": 27,
+    "out_of_scope_abstention_rate": 0.9,
+    "out_of_scope_false_returns": 3
+  },
+  "v2": {
+    "eligible_questions": 708,
+    "top_one_hits": 439,
+    "top_one_hit_rate": 0.6200564971751412,
+    "top_three_hits": 439,
+    "top_three_hit_rate": 0.6200564971751412,
+    "answerable_abstentions": 110,
+    "answerable_abstention_rate": 0.1553672316384181,
+    "out_of_scope_questions": 30,
+    "out_of_scope_abstentions": 27,
+    "out_of_scope_abstention_rate": 0.9,
+    "out_of_scope_false_returns": 3
+  },
+  "delta": {
+    "top_one_percentage_points": 16.94915254237288,
+    "top_three_percentage_points": 15.3954802259887,
+    "answerable_abstentions": -154,
+    "out_of_scope_false_returns": 0
+  },
+  "legacy_week3_development_regression": {
+    "used_for_v2_selection": false,
+    "v1": {
+      "eligible_questions": 20,
+      "top_one_hits": 12,
+      "top_one_hit_rate": 0.6,
+      "top_three_hits": 14,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 3,
+      "answerable_abstention_rate": 0.15,
+      "out_of_scope_questions": 0,
+      "out_of_scope_abstentions": 0,
+      "out_of_scope_abstention_rate": null,
+      "out_of_scope_false_returns": 0
+    },
+    "v2": {
+      "eligible_questions": 20,
+      "top_one_hits": 14,
+      "top_one_hit_rate": 0.7,
+      "top_three_hits": 14,
+      "top_three_hit_rate": 0.7,
+      "answerable_abstentions": 2,
+      "answerable_abstention_rate": 0.1,
+      "out_of_scope_questions": 0,
+      "out_of_scope_abstentions": 0,
+      "out_of_scope_abstention_rate": null,
+      "out_of_scope_false_returns": 0
+    }
+  },
+  "historical_final_regression": {
+    "used_for_v2_selection": false,
+    "independent_claim": false,
+    "limitation": "Previously used final questions are reported only as historical regression. They are not a new independent evaluation and may overlap semantically with the generated bank.",
+    "exact_normalized_overlap_with_v2_train_or_development": 0,
+    "v1": {
+      "eligible_questions": 60,
+      "top_one_hits": 32,
+      "top_one_hit_rate": 0.5333333333333333,
+      "top_three_hits": 32,
+      "top_three_hit_rate": 0.5333333333333333,
+      "answerable_abstentions": 19,
+      "answerable_abstention_rate": 0.31666666666666665,
+      "out_of_scope_questions": 0,
+      "out_of_scope_abstentions": 0,
+      "out_of_scope_abstention_rate": null,
+      "out_of_scope_false_returns": 0
+    },
+    "v2": {
+      "eligible_questions": 60,
+      "top_one_hits": 55,
+      "top_one_hit_rate": 0.9166666666666666,
+      "top_three_hits": 55,
+      "top_three_hit_rate": 0.9166666666666666,
+      "answerable_abstentions": 0,
+      "answerable_abstention_rate": 0.0,
+      "out_of_scope_questions": 0,
+      "out_of_scope_abstentions": 0,
+      "out_of_scope_abstention_rate": null,
+      "out_of_scope_false_returns": 0
+    }
+  },
+  "v1_fingerprint_compatibility": {
+    "declared_dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+    "current_dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+    "fingerprints_match": true,
+    "deterministic_parameters_match": true,
+    "comparison_policy": "Use the frozen artifact after proving exact equality with a deterministic rebuild; do not modify the historical artifact."
+  }
+}

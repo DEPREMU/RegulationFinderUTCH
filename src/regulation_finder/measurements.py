@@ -2,13 +2,57 @@
 
 import hashlib
 import platform
-import resource
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
 from time import perf_counter_ns
 
 import numpy as np
+
+try:
+    import resource
+except ImportError:  # pragma: no cover - exercised on Windows
+    resource = None
+
+
+def _peak_process_rss_bytes():
+    if resource is not None:
+        peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
+        return peak if sys.platform == "darwin" else peak * 1024
+    if sys.platform == "win32":
+        import ctypes
+        from ctypes import wintypes
+
+        class ProcessMemoryCounters(ctypes.Structure):
+            _fields_ = [
+                ("cb", wintypes.DWORD),
+                ("PageFaultCount", wintypes.DWORD),
+                ("PeakWorkingSetSize", ctypes.c_size_t),
+                ("WorkingSetSize", ctypes.c_size_t),
+                ("QuotaPeakPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaPeakNonPagedPoolUsage", ctypes.c_size_t),
+                ("QuotaNonPagedPoolUsage", ctypes.c_size_t),
+                ("PagefileUsage", ctypes.c_size_t),
+                ("PeakPagefileUsage", ctypes.c_size_t),
+            ]
+
+        counters = ProcessMemoryCounters()
+        counters.cb = ctypes.sizeof(counters)
+        get_current_process = ctypes.windll.kernel32.GetCurrentProcess
+        get_current_process.restype = wintypes.HANDLE
+        get_process_memory_info = ctypes.windll.psapi.GetProcessMemoryInfo
+        get_process_memory_info.argtypes = [
+            wintypes.HANDLE,
+            ctypes.POINTER(ProcessMemoryCounters),
+            wintypes.DWORD,
+        ]
+        get_process_memory_info.restype = wintypes.BOOL
+        process = get_current_process()
+        if not get_process_memory_info(process, ctypes.byref(counters), counters.cb):
+            raise OSError("GetProcessMemoryInfo failed")
+        return int(counters.PeakWorkingSetSize)
+    return None
 
 
 def measure(retriever, questions, model_path, iterations, hardware_label):
@@ -22,7 +66,6 @@ def measure(retriever, questions, model_path, iterations, hardware_label):
         start = perf_counter_ns()
         retriever.search(question)
         timings.append((perf_counter_ns() - start) / 1e6)
-    peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     return {
         "measured_at_utc": datetime.now(timezone.utc).isoformat(),
         "hardware_label": hardware_label,
@@ -39,8 +82,9 @@ def measure(retriever, questions, model_path, iterations, hardware_label):
         "question_count": len(questions),
         "median_ms": float(np.median(timings)),
         "p95_ms": float(np.percentile(timings, 95)),
-        "peak_process_rss_bytes": peak if sys.platform == "darwin" else peak * 1024,
+        "peak_process_rss_bytes": _peak_process_rss_bytes(),
         "procedure": "One warmup per question; cyclic sequential search calls, no HTTP/I/O. "
         "RSS is process lifetime high-water mark including imports, loading, and warmup. "
-        "Unix resource units: bytes on macOS, KiB on Linux. Hardware label is operator supplied.",
+        "Peak RSS uses resource on Unix and GetProcessMemoryInfo on Windows. "
+        "Hardware label is operator supplied.",
     }

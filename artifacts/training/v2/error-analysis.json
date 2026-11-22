@@ -1,0 +1,114 @@
+{
+  "development_questions": 708,
+  "correct": 439,
+  "incorrect_answered": 159,
+  "abstentions": 110,
+  "low_topic_probability_abstentions": 91,
+  "lexical_gate_abstentions": 19,
+  "classification_errors": 159,
+  "ranking_or_article_filter_errors": 0,
+  "top_one_miss_but_top_three_hit": 0,
+  "most_common_confusions": [
+    {
+      "expected_article": "10",
+      "displayed_articles": "30",
+      "count": 20
+    },
+    {
+      "expected_article": "30",
+      "displayed_articles": "10",
+      "count": 15
+    },
+    {
+      "expected_article": "13",
+      "displayed_articles": "10",
+      "count": 14
+    },
+    {
+      "expected_article": "7",
+      "displayed_articles": "6",
+      "count": 12
+    },
+    {
+      "expected_article": "8",
+      "displayed_articles": "9",
+      "count": 12
+    },
+    {
+      "expected_article": "3",
+      "displayed_articles": "16",
+      "count": 9
+    },
+    {
+      "expected_article": "48",
+      "displayed_articles": "3",
+      "count": 9
+    },
+    {
+      "expected_article": "1",
+      "displayed_articles": "10",
+      "count": 8
+    },
+    {
+      "expected_article": "18",
+      "displayed_articles": "4",
+      "count": 8
+    },
+    {
+      "expected_article": "33",
+      "displayed_articles": "3",
+      "count": 6
+    },
+    {
+      "expected_article": "19",
+      "displayed_articles": "3",
+      "count": 5
+    },
+    {
+      "expected_article": "6",
+      "displayed_articles": "4",
+      "count": 3
+    },
+    {
+      "expected_article": "16",
+      "displayed_articles": "3",
+      "count": 3
+    },
+    {
+      "expected_article": "18",
+      "displayed_articles": "33",
+      "count": 3
+    },
+    {
+      "expected_article": "33",
+      "displayed_articles": "8",
+      "count": 3
+    }
+  ],
+  "out_of_scope_false_returns": [
+    {
+      "question": "¿Hay cajeros automáticos dentro de la universidad?",
+      "predicted_topic": "Calificación mínima aprobatoria",
+      "topic_probability": 0.9484713756353579,
+      "displayed_article_ids": [
+        "21"
+      ]
+    },
+    {
+      "question": "¿Hay servicio de paquetería dentro de la universidad?",
+      "predicted_topic": "Servicio social y estadía",
+      "topic_probability": 0.961926206574323,
+      "displayed_article_ids": [
+        "43"
+      ]
+    },
+    {
+      "question": "¿Qué red social publica las fotografías de los eventos?",
+      "predicted_topic": "Documentación de admisión",
+      "topic_probability": 0.8943821298943196,
+      "displayed_article_ids": [
+        "6"
+      ]
+    }
+  ]
+}

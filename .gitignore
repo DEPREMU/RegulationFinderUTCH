@@ -25,6 +25,13 @@ data/real/*
 !data/real/week3-independent-questions.csv
 !data/real/week3-prepared/
 !data/real/week3-prepared/**
+!data/real/v2-prepared/
+!data/real/v2-prepared/**
+!data/real/experiments/
+data/real/experiments/*
+!data/real/experiments/banco_3600/
+data/real/experiments/banco_3600/*
+!data/real/experiments/banco_3600/BIS_ReglamentoIA_3600_preguntas_2.csv
 !data/real/train/
 !data/real/train/**
 !data/real/dev/

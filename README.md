@@ -2,7 +2,7 @@
 
 University Nano-AI track #5, Regulation Finder. A lightweight offline application retrieves up to three articles with their identifiers and **exact original text**. It does not generate answers. Informational only; not an official university source.
 
-This repository is preparation, not the completed assignment. Everything under `data/synthetic/` is **invented synthetic demo data**, not UTCH regulation. The real Week 2 training and development files in `data/real/` were supplied for this project; permission for school or public redistribution has not been confirmed. External evaluation questions, student contributions, and Pi results are not implied.
+This repository is preparation, not the completed assignment. Everything under `data/synthetic/` is **invented synthetic demo data**, not UTCH regulation. The real training and development files in `data/real/` were supplied for this project; the project team confirmed authorization to publish and redistribute the regulation data and derived artifacts on 21 November 2026. External evaluation questions, student contributions, and Pi results are not implied.
 
 ## Setup and synthetic demo
 
@@ -40,7 +40,7 @@ uv run --frozen regulation-finder --data data/synthetic --model artifacts/synthe
 
 Missing or stale artifacts require `train`; invalid datasets exit with a clear error. Empty questions request input. Unseen vocabulary, failed probability gates or no useful lexical overlap produce `I don't find this in the regulation`. At most three articles from the predicted topic appear; fewer candidates yield fewer results without crossing topics. Synthetic-demo commands can pass explicit thresholds; the real Week 2 defaults below are the selected settings from the documented development-only calibration. `calibrate` reports a threshold grid but does not select a setting or read the out-of-scope/final evaluation splits.
 
-The current real-data Week 2 run is organized under `data/real/train/`, `data/real/dev/` and `data/real/prepared/`; the saved model and calibration outputs are under `artifacts/training/`. `.gitignore` allows these files to be added for repository-level reproducibility; push the local commit before another device can retrieve them. School permission and external redistribution terms remain pending; do not publish the repository outside its authorized audience. The separate final evaluation file is not included.
+The current real-data Week 2 run is organized under `data/real/train/`, `data/real/dev/` and `data/real/prepared/`; the saved model and calibration outputs are under `artifacts/training/`. `.gitignore` allows these files to be added for repository-level reproducibility. The project team confirmed authorization to publish the regulation data and derived artifacts. The separate final evaluation file is not included.
 
 Reproduce the Week 2 model and development-only calibration with:
 
@@ -83,13 +83,31 @@ uv run --frozen python scripts/prepare_pair_dataset.py \
   --output data/real
 ```
 
-The adapter preserves the `train`/`dev` assignments, allows multiple queries to reference one article, and refuses to write output when an article topic has no training example. School permission remains pending.
+The adapter preserves the `train`/`dev` assignments, allows multiple queries to reference one article, and refuses to write output when an article topic has no training example. Publication of the supplied regulation data and derived artifacts is authorized by the project team.
+
+## V2 grouped 3,600-question experiment
+
+V2 keeps the same 22 articles and 20 canonical topics. It audits the supplied 3,600-question
+bank, holds out complete article+intention families, trains a lightweight word+Spanish-suffix
+Naive Bayes model, and adds optional article retrieval profiles. The frozen V2 release uses
+topic probability `0.55`, lexical score `0.45` and article profile weight `1.0`:
+
+```sh
+uv run --frozen regulation-finder --data data/real/v2-prepared --model artifacts/training/v2/v2-model.json --min-topic-probability 0.55 --min-lexical-score 0.45 --article-profile-weight 1.0 search '¿Cuál es la calificación mínima aprobatoria?'
+uv run --frozen regulation-finder --data data/real/v2-prepared --model artifacts/training/v2/v2-model.json --min-topic-probability 0.55 --min-lexical-score 0.45 --article-profile-weight 1.0 web
+```
+
+The leakage-corrected grouped development comparison is V1 `330/708` (46.61%) versus V2
+`439/708` (62.01%) Top-3, with the same 3/30 local out-of-scope false returns. V2 excludes 52
+historical questions that overlap held-out intentions; 5 conservative exclusions still require
+human review. This is development, not a new independent final evaluation. See
+[the complete V2 audit and release report](docs/v2-training-3600-report.md).
 
 ## Assignment checklist and pending inputs
 
 - Classifier: direct multinomial Naive Bayes, trained from scratch; no pretrained models, embeddings, LLMs or external AI APIs. No autocomplete.
-- One row per article, original text retained: 22 articles are included in the Week 2 prepared dataset; confirm institutional permission and provenance before redistribution.
-- School permission confirmed with instructor, source/provenance and redistribution terms: **pending Karen/instructor**. Software license is also a team decision; no license selected.
+- One row per article, original text retained: 22 articles are included in the prepared dataset.
+- The project team confirmed authorization to publish and redistribute the regulation data and derived artifacts on 21 November 2026. Software licensing remains a separate team decision; no license is selected here.
 - Training/development runs: Week 2 used 60 training questions; Week 3 combines those with 60 additional training questions. Both use 20 development pairs; the final evaluation set remains separate and unused.
 - User-designated 60-question evaluation returned 32/60 top-three hits (53.3%) with the frozen Week 3 model. The CSV does not identify the authoring team, so that provenance remains unconfirmed; no out-of-scope questions were included.
 - Actual Raspberry Pi model, OS, installation, latency and memory measurements: **pending Betsy**.

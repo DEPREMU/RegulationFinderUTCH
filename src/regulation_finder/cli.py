@@ -23,6 +23,12 @@ def main(argv=None):
         "--min-topic-probability", type=float, default=Settings().min_topic_probability
     )
     parser.add_argument("--min-lexical-score", type=float, default=Settings().min_lexical_score)
+    parser.add_argument(
+        "--article-profile-weight", type=float, default=Settings().article_profile_weight
+    )
+    parser.add_argument(
+        "--feature-mode", choices=["word", "word_stem", "word_char4"], default="word"
+    )
     commands = parser.add_subparsers(dest="command", required=True)
     commands.add_parser("validate")
     commands.add_parser("train")
@@ -45,7 +51,11 @@ def main(argv=None):
     web.add_argument("--port", type=int, default=5000)
     args = parser.parse_args(argv)
     try:
-        settings = Settings(args.min_topic_probability, args.min_lexical_score)
+        settings = Settings(
+            args.min_topic_probability,
+            args.min_lexical_score,
+            args.article_profile_weight,
+        )
         dataset = load_dataset(
             args.data,
             include_development=args.command in {"validate", "evaluate", "calibrate", "measure"},
@@ -60,7 +70,7 @@ def main(argv=None):
         if args.command == "validate":
             output = {**common, "valid": True, "articles": len(dataset.articles)}
         elif args.command == "train":
-            train(dataset, args.model)
+            train(dataset, args.model, args.feature_mode)
             output = {**common, "model_saved": args.model}
         else:
             retriever = Retriever(

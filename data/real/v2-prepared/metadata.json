@@ -1,0 +1,8 @@
+{
+  "dataset_id": "utch-v2-bank3600-grouped-intent-v1.1",
+  "synthetic": false,
+  "permission_status": "User-authorized local experiment; external redistribution status remains unverified",
+  "evaluation_origin": "Development holds out complete article+intention families from the 3,600 bank. Known historical-training semantic overlaps were excluded from V2 only. Historical final evaluation is excluded and was not used for tuning.",
+  "source_sha256": "261bf4303a391f504d655f70d5950989f5f3360037c56c3247e4124d8caa1d67",
+  "split_seed": "utch-v2-grouped-intent-split-2026-11-18"
+}
