@@ -1,0 +1,23 @@
+﻿article_id,canonical_topic,bank_topics,bank_question_count,coverage,mapping_method
+1,Alcance del reglamento,Alcance del reglamento,180,covered,article_esperado -> existing article catalog
+2,Calificación mínima aprobatoria,,0,legacy_only,article_esperado -> existing article catalog
+3,Clasificación de estudiantes,Tipos de estudiantes y reincorporación,180,covered,article_esperado -> existing article catalog
+4,Examen de ingreso,Examen de ingreso,180,covered,article_esperado -> existing article catalog
+5,Examen de ingreso,,0,legacy_only,article_esperado -> existing article catalog
+6,Documentación de admisión,Documentación de admisión,180,covered,article_esperado -> existing article catalog
+7,Estudios en el extranjero,Estudios previos en el extranjero,180,covered,article_esperado -> existing article catalog
+8,Cambio de carrera de nuevo ingreso,Cambio de carrera de nuevo ingreso,180,covered,article_esperado -> existing article catalog
+9,Cambio de carrera y turno,"Cambio de carrera, turno y especialidad",180,covered,article_esperado -> existing article catalog
+10,Acreditación de asignaturas,Acreditación de asignaturas,180,covered,article_esperado -> existing article catalog
+10 BIS,Certificación de inglés BIS,Inglés y certificación del modelo BIS,180,covered,article_esperado -> existing article catalog
+13,Periodos escolares,Periodos escolares,180,covered,article_esperado -> existing article catalog
+16,Inscripción simultánea,Inscripción simultánea,180,covered,article_esperado -> existing article catalog
+18,Reincorporación académica,Reincorporación tras no reinscribirse,180,covered,article_esperado -> existing article catalog
+19,Baja temporal y repetición,Baja temporal y repetición,180,covered,article_esperado -> existing article catalog
+20,Evaluación académica,Definición de evaluación académica,180,covered,article_esperado -> existing article catalog
+21,Calificación mínima aprobatoria,Nivel mínimo aprobatorio,180,covered,article_esperado -> existing article catalog
+30,Requisitos para aprobar una asignatura,Aprobación de todas las unidades,180,covered,article_esperado -> existing article catalog
+33,Derecho a evaluación ordinaria,Requisitos de evaluación ordinaria,180,covered,article_esperado -> existing article catalog
+43,Servicio social y estadía,Estadía y servicio social,180,covered,article_esperado -> existing article catalog
+47,Derecho a revisión de evaluaciones,Derechos de los estudiantes,180,covered,article_esperado -> existing article catalog
+48,Obligaciones de pago,Obligaciones de los estudiantes,180,covered,article_esperado -> existing article catalog

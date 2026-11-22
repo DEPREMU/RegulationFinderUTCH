@@ -1,6 +1,8 @@
 import json
+import runpy
 import shutil
 from dataclasses import replace
+from pathlib import Path
 
 import numpy as np
 import pytest
@@ -13,6 +15,10 @@ from regulation_finder.measurements import measure
 from regulation_finder.retrieval import Retriever
 from regulation_finder.schemas import Article, EvaluationExample, TrainingExample, load_dataset
 from regulation_finder.web import create_app
+
+_PREPARE_V2 = runpy.run_path(Path(__file__).parents[1] / "scripts" / "prepare_v2_dataset.py")
+CONFIRMED_HISTORICAL_OVERLAPS = _PREPARE_V2["CONFIRMED_HISTORICAL_OVERLAPS"]
+REVIEW_HISTORICAL_OVERLAPS = _PREPARE_V2["REVIEW_HISTORICAL_OVERLAPS"]
 
 
 def test_naive_bayes_counts_and_serialization(tmp_path):
@@ -32,6 +38,24 @@ def test_naive_bayes_counts_and_serialization(tmp_path):
     assert loaded.predict("red red") == model.predict("red red")
     with pytest.raises(ValueError, match="fingerprint"):
         TopicClassifier.load(path, "different")
+
+
+def test_optional_stem_features_match_morphological_variants(tmp_path):
+    examples = [
+        TrainingExample("1", "nivel minimo aprobatorio", "pass", "synthetic"),
+        TrainingExample("2", "cambio de carrera", "transfer", "synthetic"),
+    ]
+    word_model = TopicClassifier().fit(examples)
+    stem_model = TopicClassifier().fit(examples, feature_mode="word_stem")
+    assert stem_model.predict("calificacion minima aprobatoria")[0] == "pass"
+    path = tmp_path / "stem-model.json"
+    stem_model.save(path, "fixture")
+    loaded = TopicClassifier.load(path, "fixture")
+    assert loaded.feature_mode == "word_stem"
+    assert loaded.predict("calificacion minima aprobatoria") == stem_model.predict(
+        "calificacion minima aprobatoria"
+    )
+    assert word_model.feature_mode == "word"
 
 
 def test_ranking_exact_text_and_top_three(retriever):
@@ -70,11 +94,14 @@ def test_evaluation_denominator_and_abstentions(retriever):
     ]
     report = evaluate(retriever, rows, retriever.dataset.out_of_scope)
     assert report["eligible_questions"] == 2
+    assert report["top_one_hits"] == 1
+    assert report["top_one_hit_rate"] == 0.5
     assert report["top_three_hits"] == 1
     assert report["top_three_hit_rate"] == 0.5
     assert report["answerable_abstentions"] == 1
     assert report["out_of_scope_questions"] == 2
     assert report["out_of_scope_abstentions"] == 2
+    assert report["out_of_scope_false_returns"] == 0
     assert evaluate(retriever, [], [])["top_three_hit_rate"] is None
 
 
@@ -214,3 +241,59 @@ def test_training_excludes_holdout_vocabulary(dataset):
 def test_measurement_validation(retriever):
     with pytest.raises(ValueError):
         measure(retriever, [], "unused", 0, "test")
+
+
+def test_optional_article_profiles_improve_paraphrase_ranking(dataset):
+    changed = replace(
+        dataset,
+        retrieval_profiles={"SYN-L2": ("voucher",)},
+    )
+
+    class FixedModel:
+        labels = ["laboratory", "library"]
+
+        def predict(self, question):
+            return "library", 1.0
+
+    legacy = Retriever(changed, FixedModel(), Settings(0.0, 0.5, 0.0))
+    profiled = Retriever(changed, FixedModel(), Settings(0.0, 0.5, 1.0))
+    assert legacy.search("voucher").articles == []
+    assert profiled.search("voucher").articles[0].article_id == "SYN-L2"
+
+
+def test_retrieval_profiles_are_validated_and_fingerprinted(data_path, tmp_path):
+    directory = tmp_path / "profiled"
+    shutil.copytree(data_path, directory)
+    original = load_dataset(directory)
+    (directory / "retrieval_profiles.json").write_text(
+        json.dumps({"SYN-L2": ["voucher"]}), encoding="utf-8"
+    )
+    profiled = load_dataset(directory)
+    assert profiled.fingerprint != original.fingerprint
+    assert profiled.retrieval_profiles == {"SYN-L2": ("voucher",)}
+
+    (directory / "retrieval_profiles.json").write_text(
+        json.dumps({"UNKNOWN": ["voucher"]}), encoding="utf-8"
+    )
+    with pytest.raises(ValueError, match="unknown articles"):
+        load_dataset(directory)
+
+
+def test_dataset_fingerprint_is_portable_across_line_endings(data_path, tmp_path):
+    lf_directory = tmp_path / "lf"
+    crlf_directory = tmp_path / "crlf"
+    shutil.copytree(data_path, lf_directory)
+    shutil.copytree(data_path, crlf_directory)
+    for name in ("metadata", "articles", "training"):
+        path = lf_directory / f"{name}.json"
+        normalized = path.read_bytes().replace(b"\r\n", b"\n").replace(b"\r", b"\n")
+        path.write_bytes(normalized)
+        (crlf_directory / f"{name}.json").write_bytes(normalized.replace(b"\n", b"\r\n"))
+    assert load_dataset(lf_directory).fingerprint == load_dataset(crlf_directory).fingerprint
+
+
+def test_v2_historical_overlap_policy_is_explicit_and_disjoint():
+    assert len(CONFIRMED_HISTORICAL_OVERLAPS) == 47
+    assert len(REVIEW_HISTORICAL_OVERLAPS) == 5
+    assert not (set(CONFIRMED_HISTORICAL_OVERLAPS) & set(REVIEW_HISTORICAL_OVERLAPS))
+    assert CONFIRMED_HISTORICAL_OVERLAPS["Q9022"] == "A10/I1+I6"

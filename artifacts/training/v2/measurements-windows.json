@@ -1,0 +1,43 @@
+{
+  "same_process_peak_rss_limitation": "Windows peak working set is process-lifetime high-water mark; compare latency and artifact size directly, and remeasure memory in separate Pi processes.",
+  "v1": {
+    "measured_at_utc": "2026-11-22T00:25:59.518840+00:00",
+    "hardware_label": "Windows development host",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "dataset_id": "utch-week3-train120-dev20-v1.0",
+    "dataset_fingerprint": "80f42de07c942a7ef0f5db28a76dabccbcb7a0678b8dd3edc06e33ba8eaa19ed",
+    "model_sha256": "55f8f51d2cc00e97e67f826993546aa7fa25c5a534c5a85482c9488d616831a7",
+    "synthetic": false,
+    "iterations": 1000,
+    "question_count": 708,
+    "median_ms": 0.0883,
+    "p95_ms": 0.1142,
+    "peak_process_rss_bytes": 48627712,
+    "procedure": "One warmup per question; cyclic sequential search calls, no HTTP/I/O. RSS is process lifetime high-water mark including imports, loading, and warmup. Peak RSS uses resource on Unix and GetProcessMemoryInfo on Windows. Hardware label is operator supplied.",
+    "model_size_bytes": 275296
+  },
+  "v2": {
+    "measured_at_utc": "2026-11-22T00:25:59.897105+00:00",
+    "hardware_label": "Windows development host",
+    "platform": "Windows-11-10.0.26300-SP0",
+    "machine": "AMD64",
+    "processor": "AMD64 Family 25 Model 80 Stepping 0, AuthenticAMD",
+    "python": "3.14.2",
+    "numpy": "2.5.4",
+    "dataset_id": "utch-v2-bank3600-grouped-intent-v1.1",
+    "dataset_fingerprint": "305544dbd1d6e245737f411490a10161815223bb52ea6f032b8e7447b24d83ec",
+    "model_sha256": "ac9ed0964a570e5f011915362389d0e2d50dfc43b947dbb0f1b3481ffa3d2c7e",
+    "synthetic": false,
+    "iterations": 1000,
+    "question_count": 708,
+    "median_ms": 0.11845,
+    "p95_ms": 0.15031499999999998,
+    "peak_process_rss_bytes": 49283072,
+    "procedure": "One warmup per question; cyclic sequential search calls, no HTTP/I/O. RSS is process lifetime high-water mark including imports, loading, and warmup. Peak RSS uses resource on Unix and GetProcessMemoryInfo on Windows. Hardware label is operator supplied.",
+    "model_size_bytes": 634932
+  }
+}

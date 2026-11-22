@@ -1,0 +1,57 @@
+{
+  "validation_date": "2026-11-21",
+  "branch": "feature/v2-entrenamiento-3600",
+  "python_install": {
+    "command": "uv sync --frozen",
+    "result": "passed"
+  },
+  "python_quality": {
+    "ruff_check": "passed",
+    "ruff_format_check": "passed",
+    "pytest": {
+      "passed": 30,
+      "failed": 0
+    }
+  },
+  "frontend": {
+    "npm_ci": "passed",
+    "eslint": "passed",
+    "vite_build": "passed",
+    "npm_audit_summary": "3 moderate vulnerabilities reported; npm audit fix was not run"
+  },
+  "runtime_smoke": {
+    "v2_frontend_http_status": 200,
+    "v2_api_http_status": 200,
+    "v2_expected_article": "21",
+    "v2_out_of_scope_abstained": true,
+    "week3_frontend_http_status": 200,
+    "week3_api_http_status": 200
+  },
+  "v2_model": {
+    "dataset_fingerprint": "305544dbd1d6e245737f411490a10161815223bb52ea6f032b8e7447b24d83ec",
+    "sha256": "ac9ed0964a570e5f011915362389d0e2d50dfc43b947dbb0f1b3481ffa3d2c7e",
+    "loaded_with_matching_fingerprint": true,
+    "deterministic_rebuild_sha256_identical": true
+  },
+  "development_reproduction": {
+    "questions": 708,
+    "top_one_hits": 439,
+    "top_three_hits": 439,
+    "top_three_hit_rate": 0.6200564971751412,
+    "abstentions": 110,
+    "independent_evaluation_claimed": false
+  },
+  "semantic_separation": {
+    "training_examples": 2942,
+    "training_group_families": 958,
+    "development_group_families": 236,
+    "group_family_intersection": 0,
+    "historical_overlap_exclusions": 52,
+    "complete_human_adjudication_claimed": false
+  },
+  "week3_tracked_files_modified": false,
+  "publication": {
+    "status": "publication_and_redistribution_authorized_by_project_team",
+    "authorization_date": "2026-11-21"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "dataset_id": "utch-v2-bank3600-grouped-intent-v1.1",
+  "dataset_fingerprint": "305544dbd1d6e245737f411490a10161815223bb52ea6f032b8e7447b24d83ec",
+  "min_topic_probability": 0.55,
+  "min_lexical_score": 0.45,
+  "article_profile_weight": 1.0,
+  "development_metrics": {
+    "eligible_questions": 708,
+    "top_one_hits": 439,
+    "top_one_hit_rate": 0.6200564971751412,
+    "top_three_hits": 439,
+    "top_three_hit_rate": 0.6200564971751412,
+    "answerable_abstentions": 110,
+    "answerable_abstention_rate": 0.1553672316384181,
+    "out_of_scope_questions": 30,
+    "out_of_scope_abstentions": 27,
+    "out_of_scope_abstention_rate": 0.9,
+    "out_of_scope_false_returns": 3
+  },
+  "selection_is_development_only": true,
+  "historical_final_evaluation_used": false,
+  "out_of_scope_constraint": "V2 false returns must be no greater than V1 on the 30 local regression cases"
+}

@@ -41,6 +41,7 @@ class Dataset:
     out_of_scope: list[EvaluationExample]
     metadata: dict
     fingerprint: str
+    retrieval_profiles: dict[str, tuple[str, ...]] | None = None
 
 
 def _rows(path: Path, cls, id_field: str):
@@ -107,6 +108,22 @@ def load_dataset(
     if any(not tokens(t.question) for t in training):
         raise ValueError("Training questions must contain searchable tokens")
     article_ids = {a.article_id for a in articles}
+    profiles_path = directory / "retrieval_profiles.json"
+    retrieval_profiles = None
+    if profiles_path.exists():
+        raw_profiles = json.loads(profiles_path.read_text(encoding="utf-8"))
+        if not isinstance(raw_profiles, dict) or set(raw_profiles) - article_ids:
+            raise ValueError("retrieval_profiles.json references unknown articles")
+        retrieval_profiles = {}
+        for article_id, profile in raw_profiles.items():
+            if (
+                not isinstance(profile, list)
+                or not profile
+                or any(not isinstance(token, str) or tokens(token) != [token] for token in profile)
+                or len(profile) != len(set(profile))
+            ):
+                raise ValueError("retrieval_profiles.json requires unique normalized tokens")
+            retrieval_profiles[article_id] = tuple(profile)
     seen_ids, seen_questions = set(), set()
     for split in (training, *splits):
         for row in split:
@@ -126,11 +143,16 @@ def load_dataset(
         raise ValueError("Out-of-scope examples must have no accepted articles")
     # A model depends on source articles and training examples only. In
     # particular, the fingerprint must not require opening sealed holdouts.
-    names = ("metadata", "articles", "training")
+    names = ["metadata", "articles", "training"]
+    if profiles_path.exists():
+        names.append("retrieval_profiles")
     digest = hashlib.sha256()
     for name in names:
         digest.update(name.encode())
-        digest.update((directory / f"{name}.json").read_bytes())
+        payload = (directory / f"{name}.json").read_bytes()
+        # Git may check out the same JSON as CRLF on Windows and LF on Linux/Pi.
+        # Fingerprints describe dataset content, so line-ending representation is canonicalized.
+        digest.update(payload.replace(b"\r\n", b"\n").replace(b"\r", b"\n"))
     return Dataset(
         articles,
         training,
@@ -139,4 +161,5 @@ def load_dataset(
         out_of_scope,
         metadata,
         digest.hexdigest(),
+        retrieval_profiles,
     )

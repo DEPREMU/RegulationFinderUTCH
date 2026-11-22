@@ -1,0 +1,182 @@
+[
+  {
+    "question_id": "V2-OOS-001",
+    "question": "¿Cuál será el clima mañana en Chihuahua?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-002",
+    "question": "¿Qué menú sirve hoy la cafetería del campus?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-003",
+    "question": "¿Cuál es la contraseña de la red wifi para visitantes?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-004",
+    "question": "¿A qué hora pasa la ruta de transporte escolar?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-005",
+    "question": "¿Cuánto cuesta el estacionamiento para visitantes?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-006",
+    "question": "¿Dónde puedo imprimir un mapa de los edificios del campus?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-007",
+    "question": "¿Cuál es el número telefónico personal del rector?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-008",
+    "question": "¿Cuándo juega el equipo de fútbol de la universidad?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-009",
+    "question": "¿Qué libros nuevos llegaron esta semana a la biblioteca?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-010",
+    "question": "¿La cafetería ofrece opciones vegetarianas?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-011",
+    "question": "¿Dónde se tramita una vacuna contra la influenza?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-012",
+    "question": "¿Qué modelo de computadora venden en la tienda universitaria?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-013",
+    "question": "¿Cuánto cuesta rentar el auditorio para una fiesta?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-014",
+    "question": "¿Qué películas proyectarán este viernes en el campus?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-015",
+    "question": "¿Dónde puedo reportar un automóvil mal estacionado?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-016",
+    "question": "¿Cuál es el horario de la alberca universitaria?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-017",
+    "question": "¿Qué proveedor surte los uniformes deportivos?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-018",
+    "question": "¿Hay cajeros automáticos dentro de la universidad?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-019",
+    "question": "¿Qué estación de radio se escucha mejor en Chihuahua?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-020",
+    "question": "¿Cuánto cuesta un desayuno cerca de la UTCH?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-021",
+    "question": "¿Puedo reservar una cancha para el fin de semana?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-022",
+    "question": "¿Qué autobús público llega al campus?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-023",
+    "question": "¿Dónde se compran boletos para el concierto universitario?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-024",
+    "question": "¿Cuál es la marca del mobiliario de los salones?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-025",
+    "question": "¿Hay servicio de paquetería dentro de la universidad?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-026",
+    "question": "¿Qué red social publica las fotografías de los eventos?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-027",
+    "question": "¿Cuál es el horario de atención de la papelería?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-028",
+    "question": "¿Dónde puedo cargar un vehículo eléctrico?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-029",
+    "question": "¿Qué hoteles están cerca de la universidad?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  },
+  {
+    "question_id": "V2-OOS-030",
+    "question": "¿Se permiten mascotas en las áreas verdes del campus?",
+    "accepted_article_ids": [],
+    "provenance": "V2 development regression; locally authored; not independent final evaluation"
+  }
+]

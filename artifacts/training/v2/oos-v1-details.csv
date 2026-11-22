@@ -1,0 +1,31 @@
+﻿question_id,question,accepted_article_ids,predicted_topic,topic_probability,displayed_article_ids,abstained,top_one_hit,hit,provenance
+V2-OOS-001,¿Cuál será el clima mañana en Chihuahua?,,Calificación mínima aprobatoria,0.16445265319066815,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-002,¿Qué menú sirve hoy la cafetería del campus?,,Evaluación académica,0.2053487173243566,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-003,¿Cuál es la contraseña de la red wifi para visitantes?,,Derecho a evaluación ordinaria,0.43341680426043494,33,False,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-004,¿A qué hora pasa la ruta de transporte escolar?,,Examen de ingreso,0.308909511518668,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-005,¿Cuánto cuesta el estacionamiento para visitantes?,,Examen de ingreso,0.15147171434363,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-006,¿Dónde puedo imprimir un mapa de los edificios del campus?,,Cambio de carrera de nuevo ingreso,0.18426924752419283,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-007,¿Cuál es el número telefónico personal del rector?,,Calificación mínima aprobatoria,0.3557264728247989,2 | 21,False,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-008,¿Cuándo juega el equipo de fútbol de la universidad?,,Examen de ingreso,0.23905361402932246,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-009,¿Qué libros nuevos llegaron esta semana a la biblioteca?,,Examen de ingreso,0.41231986100379076,4,False,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-010,¿La cafetería ofrece opciones vegetarianas?,,Inscripción simultánea,0.09090949817914232,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-011,¿Dónde se tramita una vacuna contra la influenza?,,Calificación mínima aprobatoria,0.12792071442498348,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-012,¿Qué modelo de computadora venden en la tienda universitaria?,,Examen de ingreso,0.1843549739562588,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-013,¿Cuánto cuesta rentar el auditorio para una fiesta?,,Derecho a evaluación ordinaria,0.17437483957981478,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-014,¿Qué películas proyectarán este viernes en el campus?,,Examen de ingreso,0.23342124601359018,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-015,¿Dónde puedo reportar un automóvil mal estacionado?,,Baja temporal y repetición,0.2502208535560697,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-016,¿Cuál es el horario de la alberca universitaria?,,Calificación mínima aprobatoria,0.24670739088528892,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-017,¿Qué proveedor surte los uniformes deportivos?,,Certificación de inglés BIS,0.16706969972037777,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-018,¿Hay cajeros automáticos dentro de la universidad?,,Examen de ingreso,0.21920934232404984,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-019,¿Qué estación de radio se escucha mejor en Chihuahua?,,Examen de ingreso,0.19268370512200866,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-020,¿Cuánto cuesta un desayuno cerca de la UTCH?,,Cambio de carrera de nuevo ingreso,0.20380378808029145,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-021,¿Puedo reservar una cancha para el fin de semana?,,Derecho a evaluación ordinaria,0.1422488022373539,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-022,¿Qué autobús público llega al campus?,,Estudios en el extranjero,0.13488498281282435,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-023,¿Dónde se compran boletos para el concierto universitario?,,Examen de ingreso,0.17569462102370834,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-024,¿Cuál es la marca del mobiliario de los salones?,,Calificación mínima aprobatoria,0.3016790961312448,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-025,¿Hay servicio de paquetería dentro de la universidad?,,Examen de ingreso,0.1962094489872351,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-026,¿Qué red social publica las fotografías de los eventos?,,Certificación de inglés BIS,0.2169627805934942,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-027,¿Cuál es el horario de atención de la papelería?,,Calificación mínima aprobatoria,0.28765022990703965,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-028,¿Dónde puedo cargar un vehículo eléctrico?,,Baja temporal y repetición,0.2502208535560697,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-029,¿Qué hoteles están cerca de la universidad?,,Examen de ingreso,0.20827367017433773,,True,,,V2 development regression; locally authored; not independent final evaluation
+V2-OOS-030,¿Se permiten mascotas en las áreas verdes del campus?,,Certificación de inglés BIS,0.17514443483205705,,True,,,V2 development regression; locally authored; not independent final evaluation
